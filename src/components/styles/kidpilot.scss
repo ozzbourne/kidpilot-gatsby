@@ -1,0 +1,79 @@
+html {
+  body {
+    .index {
+      .jumbotron-custom {
+         background: $kidpilot-blue;
+        .hero-bottom {
+          .cta {
+            width:100%;
+            height:100%;
+            @media #{$medium-and-down} {
+                display: none;
+              }
+            .clouds{
+              opacity: .6;
+              width: 130%;
+              height: 100%;
+              background: url("../../images/clouds.svg") repeat-x center bottom;
+              position: absolute;
+              bottom: 0;
+              @media #{$large-and-down} {
+                width: 200%;
+              }
+            }
+          }
+        }
+      }
+    .disc-golf-section {
+      .container-custom {
+        width: 80%;
+        margin: 0 auto;
+      }
+      padding-top: 4.5rem;
+      text-align: center;
+      color: $white;
+      height: auto;
+      background-color: $extradark-blue;
+      .disc-golf-cta {
+        text-align: left;
+        margin-top: 25%;
+        max-width: 85%;
+        h5 {
+          line-height: 1.8rem;
+          margin: 20px 0;
+        }
+        a {
+          //width: 40%;
+          text-align: center;
+          margin-left: 15px;
+          @include button-link($white, 8px, $dark-blue, $white, 35px, 10px, $mouseover, $white);
+          @media #{$medium-and-down} {
+            margin: 0 auto 3rem auto;
+          }
+        }
+        @media #{$large-only} {
+          margin-top: 20%;
+          max-width: 95%;
+          padding-bottom: 3.5rem;
+          a {
+            width: 50%;
+          }
+        }
+        @media #{$medium-and-down} {
+          text-align: center;
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+      img {
+        width: 80%;
+        @media #{$large-only} {
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+        }
+      }
+    }
+    }
+  }
+}

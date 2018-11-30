@@ -1,0 +1,77 @@
+//------------
+//  COLORS
+//------------
+//Global
+$white: #ffffff;
+$black: #000000;
+$mouseover: #57b5e2;
+$light-gray: #fbfbfb;
+$light-gray-menu: #f1f1f1;
+$dark-gray-graphic: #494949;
+$medium-gray: #f5f6f7;
+$subscribe: #dedede;
+$divider: #cbcbcb;
+$icon: #2e2e2e;
+$dark-gray-footer: #222222;
+
+//Typography
+$dark-gray-text: #323232;
+$gray: #757575;
+
+
+//Index
+$kidpilot-blue: #c8ebff; //$blue is read as "blue" on mobile buttonclick.
+$dark-blue: #0e92cf;
+$extradark-blue: #2d323c;
+$light-blue: #e2f3fd;
+
+
+// Punchin
+$light-orange: #fde1c3;
+$orange: #f99300;
+
+
+// Something
+$light-green: #91aa9d;
+$dark-blue-something: #3e606f;
+$semi-dark-gray: #dedede;
+
+//------------
+
+//------------
+//  FONTS
+//------------
+
+$light: Gilroy-Light, sans-serif;
+$regular: Gilroy-Regular, sans-serif;
+$semibold: Gilroy-Semibold, sans-serif;
+$bold: Gilroy-Bold, sans-serif;
+$light-italic: Gilroy-LightItalic, sans-serif;
+
+$thin: BariolThin, sans-serif;
+$regular-italic: Intro-Regular-Italic, sans-serif;
+$thin-italic: BariolThinItalic, sans-serif;
+$bold-italic: BariolBoldItalic, sans-serif;
+
+//----------
+// Media Query Ranges
+//----------
+//Picked to work with Bootstrap CSS columns
+$small-screen-up: 577px !default;
+$medium-screen-up: 768px !default;
+$large-screen-up: 992px !default;
+$xlarge-screen: 1200px !default;
+$small-screen: 576px !default;
+$medium-screen: 768px !default;
+$large-screen: 992px !default;
+$xlarge-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$xlarge-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
+$xlarge-and-down: "only screen and (max-width : #{$xlarge-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$large-only: "only screen and (min-width : #{$medium-screen-up}) and (max-width : #{$large-screen})" !default;
