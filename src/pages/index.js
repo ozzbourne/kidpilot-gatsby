@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
                 </div>
              </div>
              <div className="text-wrapper container">
-                <h1 className="hidden">Punch In for iOSnus</h1>
+                <h1 className="hidden">Punch In for iOS</h1>
                 <h4 className="hidden">The friendly and efficient worktimer for Mac is now available for iPhone and iPad.</h4>
                   <h4 className="hidden">A single user time tracking app that does the job right.<div className="row">
                    <Link to="/punchin/ios">
