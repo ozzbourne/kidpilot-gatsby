@@ -27,12 +27,12 @@ class IndexPage extends React.Component {
   
       <Layout>
         <Helmet
-          title={"Kidpilot - Lovely productivity apps for iPhone, iPad and Mac"}
+          title={"Kidpilot - We make apps you love to use"}
           meta={[
-            { name: 'description', content: 'We make great and efficient productivity apps for iPhone, iPad and Mac. We keep things simple to help you focus on what you do best. Less really is more.' },
-            { property: 'og:title', content: 'Kidpilot - Lovely productivity apps for iPhone, iPad and Mac' },
+            { name: 'description', content: 'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.' },
+            { property: 'og:title', content: 'Kidpilot - We make apps you love to use' },
             { property: 'og:url', content: 'http://www.wearekidpilot.com/' },
-            { property: 'og:description', content: 'We make great and efficient productivity apps for iPhone, iPad and Mac. We keep things simple to help you focus on what you do best. Less really is more.' },
+            { property: 'og:description', content: 'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.' },
           ]}
         >
           <html lang="en" />
@@ -52,13 +52,14 @@ class IndexPage extends React.Component {
              </div>
              <div className="text-wrapper container">
                 <h1 className="hidden">Punch In for iOS</h1>
-                <h4 className="hidden">The friendly and efficient worktimer for Mac is now available for iPhone and iPad.</h4>
-                  <h4 className="hidden">A single user time tracking app that does the job right.<div className="row">
-                   <Link to="/punchin/ios">
-                    <p>Learn More</p>
-                  </Link>
-                  </div>
-                </h4>
+                <h5 className="hidden">The friendly and efficient worktimer for Mac is now available for iPhone and iPad.</h5>
+                  <h5 className="hidden">A single user time tracking app that does the job right.
+                    <div className="row">
+                      <Link to="/punchin/ios">
+                        <p>Learn More</p>
+                      </Link>
+                    </div>
+                </h5>
               </div>
              </div>
                <div className="cta">
@@ -122,16 +123,13 @@ class IndexPage extends React.Component {
       <div className="disc-golf-section">
         <div className="container-custom">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-5 offset-md-1">
               <div className="disc-golf-cta">
                 <h3>Tjing&reg;</h3>
                 <h5>The new standard in Disc Golf scoring. Find and play events, keep scores and track your performance with highly detailed stats and more. Getting better is up to you, but we think we can help.</h5>
-                <div className="row">
-                  <a href="https://spinndiscgolf.com">
-                    <p>Learn more</p>
-                  </a>
-                </div>
-
+                <a href="https://spinndiscgolf.com">
+                  <p>Learn more</p>
+                </a>
               </div>
             </div>
             <div className="col-12 col-md-6">

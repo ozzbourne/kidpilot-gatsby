@@ -1,8 +1,7 @@
 import './bootstrap.min.css'
 //Below is used only for development, comment out for production, else failed to "gatsby build"
-//import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
 import './styles/style.scss'
 

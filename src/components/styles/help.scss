@@ -1,0 +1,25 @@
+html {
+  body {
+    .help {
+      background-color: $light-orange;
+      text-align: left;
+      .custom-container {
+        padding:{
+          top: 80px;
+          bottom: 60px;
+        }
+        max-width: 50%;
+        margin: 0 auto;
+      }
+      .heading {
+        margin-top: 35px;
+      }
+      .bold{
+        font-family: $bold;
+      }
+      a {
+        color: black;
+      }
+    }
+  }
+}

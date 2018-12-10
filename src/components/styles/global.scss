@@ -209,22 +209,22 @@ html {
       @media #{$medium-and-down} {
         position: fixed !important;
         padding: 20px 15px;
-        background-color: $white;
-        opacity: .97;
-//        &.scrolled {
-//          padding: 10px 30px;
-//          background-color: rgba(255,255,255,.95);
-//        }
+        //background-color: $white;
+        
+        &.scrolled {
+          padding: 10px 30px;
+          background-color: rgba(255,255,255,.98);
+        }
       }
       .brand {
         float:left;
         a {
           .kidpilot {
-            margin-top: 20px;
+            margin-top: 0px;
             margin-left: 20px;
-            width:32px;
-            height:32px; 
-            position:relative;
+            width:45px;
+            height:45px; 
+            position:fixed;
             z-index: 1;
             transition: all .3s;
             &:hover {
@@ -234,6 +234,7 @@ html {
               width: 35px;
               height: 35px;
               margin-top: 0px;
+              position: relative;
               &:hover {
                 transform: none;
               }
@@ -294,32 +295,47 @@ html {
       }
       .navigation {
         float: right;
-        padding-top: 10px;
+        padding-top: 30px;
         ul {
           li {
             line-height: initial;
-            padding: 0 15px;
+            padding: 0 25px;
             a {
               color: $dark-gray-text;
               font-family: $semibold;
-              font-size: 21px;
+              font-size: 16px;
               padding:0;
               position:relative;
               &.active-page {
                 pointer-events: none;
                 color: $gray;
               }
-              
               &:hover {
                 text-decoration: none;
                 background-color: transparent;
                 color: $gray;
               }
+              &:hover > .menu-arrow {
+                -moz-filter:opacity(.4);
+                -webkit-filter:opacity(.4);
+                -ms-filter:opacity(.4);
+                filter:opacity(.4);
+              }
+              & .menu-arrow {
+                display: inline-block;
+                width: 15px;
+                margin-left: 10px;
+                padding-bottom: 4px;
+                
+              }
             }
           }
           .dropdown.show .dropdown-toggle{
               color: $gray;
-            }
+          }
+          .dropdown-toggle::after {
+            display: none;
+          }
           .dropdown a.active-page {
             border-radius: 8px;
             background-color: $light-gray-menu;
@@ -475,7 +491,7 @@ html {
         } 
         
       }
-      h4, h2 {
+      h5, h2 {
         transition: all 2s;
         opacity:1;
         margin: 0;
@@ -500,6 +516,7 @@ html {
           width: 100%;
           overflow: hidden;
           z-index:1;
+          
           img {
             text-align:center;
             width: 70%;
@@ -686,6 +703,20 @@ html {
         color: $gray;
       }
     }
-
+    .page404 {
+      height: 50vh;
+      padding: {
+        top: 100px;
+      }
+    }
+    .store-link {
+      transition: all .5s;
+      &:hover {
+        transform: scale(1.01);
+        transition: all .5s;
+        -webkit-filter: drop-shadow(0px 5px 5px $gray);
+        filter: drop-shadow(0px 5px 5px $gray);
+      }
+    }
   }
 }

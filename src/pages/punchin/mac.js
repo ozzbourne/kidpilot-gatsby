@@ -1,9 +1,9 @@
 import React from 'react'
-import $ from 'jquery';
-//import loadJumbotronContent from '../components/customJS/loadJumbotronContent.js'
+import $ from 'jquery'
 import showMac from '../../components/customJS/showMac.js'
 import showiOS from '../../components/customJS/showiOS.js'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 
 import macAppStore from '../../images/Download_on_the_Mac_App_Store_Badge_US-UK_165x40.svg'
 import appStore from '../../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
@@ -65,13 +65,13 @@ class SecondPage extends React.Component {
                   <div className="text-wrapper">
                     <h1 className="hidden">Punch In</h1>
                     <h2 className="hidden">A simple and efficient worktimer for Mac, iPhone and iPad.</h2>
-                    <h4 className="hidden">Make time tracking less time consuming. Punch In runs smoothly in the background while you focus on what you do best. Less really is more.</h4>
+                    <h5 className="hidden">Make time tracking less time consuming. Punch In runs smoothly in the background while you focus on what you do best. Less really is more.</h5>
                     <div className="apple-link hidden">
                       <a href="https://appstore.com/mac/punchin">
-                        <img src={macAppStore} alt="Mac App Store"/>
+                        <img className="store-link" src={macAppStore} alt="Mac App Store"/>
                       </a>
                       <a href="https://appstore.com/punchintimetracker">
-                        <img src={appStore} alt="App Store"/>
+                        <img className="store-link" src={appStore} alt="App Store"/>
                       </a>
                     </div>
                   </div>
@@ -104,7 +104,7 @@ class SecondPage extends React.Component {
               <div className="section hiw">
                 <div className="container">
                   <div className="row">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 text-section">
                       <h3>
                         Use it on all your devices
                       </h3>
@@ -112,7 +112,7 @@ class SecondPage extends React.Component {
                         Easily keep your database in sync across your devices using dropbox. It’s a bit like magic.
                       </h5>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 text-section">
                       <h3 className="control">
                         Be in control
                       </h3>
@@ -247,7 +247,7 @@ class SecondPage extends React.Component {
               <div className="section apps">
                 <div className="container app">
                   <div className="row">
-                    <div className="col-12 col-lg-6 offset-lg-3">
+                    <div className="col-12 col-lg-8 offset-lg-2">
                       <img src={punchInMacIcon} alt="Punch In Mac App" />
                       <h3>
                         Get Punch In for Mac
@@ -259,13 +259,13 @@ class SecondPage extends React.Component {
                   </div>  
                   <div className="row">
                     <a href="https://appstore.com/mac/punchin">
-                      <img src={macAppStore} alt="Mac App Store"/>
+                      <img className="store-link" src={macAppStore} alt="Mac App Store"/>
                     </a>
                   </div>
                   <div className="row">
                     <div className="col-12 release-notes">
                       <div className="mt-4">
-                        <a href="https://blog.wearekidpilot.com/tagged/release-notes-punch-in-for-mac">Release notes</a> | <a href="https://wearekidpilot.com/punchin/help">FAQ</a>
+                        <a href="https://blog.wearekidpilot.com/tagged/release-notes-punch-in-for-mac">Release notes</a> | <Link to="/punchin/help">FAQ</Link>
                       </div>
                       <p>Requires Mac OS X 10.10 or newer. Compatible with High Sierra.</p>
                     </div>
@@ -276,10 +276,10 @@ class SecondPage extends React.Component {
             
             
           <div id="ios-section" style={{display: 'none'}}>
-            <div class="section hiw">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-md-6">
+            <div className="section hiw">
+              <div className="container">
+                <div className="row">
+                  <div className="col-12 col-md-6 text-section">
                     <h3>
                       Use it on all your devices
                     </h3>
@@ -287,8 +287,8 @@ class SecondPage extends React.Component {
                       Easily keep your database in sync across your devices using dropbox. It’s a bit like magic.
                     </h5>
                   </div>
-                  <div class="col-12 col-md-6">
-                    <h3 class="control">
+                  <div className="col-12 col-md-6 text-section">
+                    <h3 className="control">
                       Simple and efficient
                     </h3>
                     <h5>
@@ -297,21 +297,21 @@ class SecondPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div class="row hiw-image ios-section">
-                <div class="col-12">
+              <div className="row hiw-image ios-section">
+                <div className="col-12">
                   <img src={punchInUI} alt="Punch In UI"/>
                 </div>
               </div>
             </div>
 
-            <div class="section features">
-              <div class="container">
+            <div className="section features">
+              <div className="container">
                 <h3>
                   Punch In features for iOS
                 </h3>
-                <div class="row">
-                  <div class="col-6 col-md-3">
-                    <div class="icon-wrapper">
+                <div className="row">
+                  <div className="col-6 col-md-3">
+                    <div className="icon-wrapper">
                       <img src={searchIcon} alt=" " />
                     </div>
                     <h4>Search</h4>
@@ -319,8 +319,8 @@ class SecondPage extends React.Component {
                       Can’t find what you are looking for? Search your projects, clients or archive.
                     </h6>
                   </div>
-                  <div class="col-6 col-md-3">
-                    <div class="icon-wrapper">
+                  <div className="col-6 col-md-3">
+                    <div className="icon-wrapper">
                       <img src={sessionsLogIcon} alt=" " />
                     </div>
                     <h4>Sessions Log</h4>
@@ -328,8 +328,8 @@ class SecondPage extends React.Component {
                       Keep track of your projects in detail by using the session log to display their history.
                     </h6>
                   </div>
-                  <div class="col-6 col-md-3">
-                    <div class="icon-wrapper">
+                  <div className="col-6 col-md-3">
+                    <div className="icon-wrapper">
                       <img src={alertsIcon} alt=" " />
                     </div>
                     <h4>Alerts</h4>
@@ -337,8 +337,8 @@ class SecondPage extends React.Component {
                       Left the clock ticking? Punch In will notify you once you wake up your Mac.
                     </h6>
                   </div>
-                  <div class="col-6 col-md-3">
-                    <div class="icon-wrapper">
+                  <div className="col-6 col-md-3">
+                    <div className="icon-wrapper">
                       <img src={syncIcon} alt=" " />
                     </div>
                     <h4>Sync</h4>
@@ -350,8 +350,8 @@ class SecondPage extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="section customers">
-              <div class="container">
+            <div className="section customers">
+              <div className="container">
                 <h3>
                   What our customers have to say
                 </h3>
@@ -384,7 +384,7 @@ class SecondPage extends React.Component {
             <div className="section apps">
               <div className="container app">
                 <div className="row">
-                  <div className="col-12 col-lg-6 offset-lg-3">
+                  <div className="col-12 col-lg-8 offset-lg-2">
                     <img src={punchInIcon} alt="Punch In iOS App" />
                     <h3>
                       Get Punch In for iOS
@@ -396,13 +396,13 @@ class SecondPage extends React.Component {
                 </div>  
                 <div className="row">
                   <a href="https://appstore.com/punchintimetracker">
-                    <img src={appStore} alt="App Store"/>
+                    <img className="store-link" src={appStore} alt="App Store"/>
                   </a>
                 </div>
                 <div className="row">
                   <div className="col-12 release-notes">
                     <div className="mt-4">
-                      <a href="https://blog.wearekidpilot.com/tagged/release-notes-punch-in-for-ios">Release notes</a> | <a href="https://wearekidpilot.com/punchin/help">FAQ</a>
+                      <a href="https://blog.wearekidpilot.com/tagged/release-notes-punch-in-for-ios">Release notes</a> | <Link to="/punchin/help">FAQ</Link>
                     </div>
                     <p>Requires iOS 11 or newer. Compatible with iPhone, iPad and iPod touch.</p>
                   </div>

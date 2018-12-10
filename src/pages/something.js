@@ -58,7 +58,7 @@ class SomethingPage extends React.Component {
                     <div className="apple-link hidden">
                       <h6><span>Free</span> for iPhone, iPad and iPod touch</h6>
                       <a href="http://appstore.com/somethingtocatcheverything">
-                        <img src={appStore} alt="App Store"/>
+                        <img className="store-link" src={appStore} alt="App Store"/>
                       </a>
                     </div>
 
@@ -206,7 +206,7 @@ class SomethingPage extends React.Component {
               </div>  
               <div className="row">
                 <a href="http://appstore.com/somethingtocatcheverything">
-                  <img src={appStore} alt="App Store"/>
+                  <img className="store-link" src={appStore} alt="App Store"/>
                 </a>
               </div>
               <div className="row">

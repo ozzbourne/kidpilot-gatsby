@@ -2,7 +2,10 @@ html {
   body {
     .index {
       .jumbotron-custom {
-         background: $kidpilot-blue;
+        background: $kidpilot-blue;
+        @media #{$small-and-down} {
+          min-height: 650px;
+        }
         .hero-bottom {
           .cta {
             width:100%;
@@ -43,9 +46,8 @@ html {
           margin: 20px 0;
         }
         a {
-          //width: 40%;
+          width: 180px;
           text-align: center;
-          margin-left: 15px;
           @include button-link($white, 8px, $dark-blue, $white, 35px, 10px, $mouseover, $white);
           @media #{$medium-and-down} {
             margin: 0 auto 3rem auto;
@@ -55,9 +57,7 @@ html {
           margin-top: 20%;
           max-width: 95%;
           padding-bottom: 3.5rem;
-          a {
-            width: 50%;
-          }
+          
         }
         @media #{$medium-and-down} {
           text-align: center;
