@@ -128,14 +128,14 @@ class SecondPage extends React.Component {
                   </div>
                 </div>
               </div>
-                          <div className="section features">
+              <div className="section features">
                 <div className="container">
                   <h3>
                     Punch In features for Mac
                   </h3>
                   <div className="row">
 
-                      <div className="col-6 col-md-3">
+                      <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={searchIcon} alt=" " />
                         </div>
@@ -144,7 +144,7 @@ class SecondPage extends React.Component {
                           Can’t find what you are looking for? Search your projects, clients or archive.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={exportIcon} alt=" " />
                         </div>
@@ -153,7 +153,7 @@ class SecondPage extends React.Component {
                           Export your projects’ data to Excel, Numbers or similar software to create invoices.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={menubarIcon} alt=" " />
                         </div>
@@ -162,7 +162,7 @@ class SecondPage extends React.Component {
                           Menubar icon for easy access to start/stop and a glance at your projects.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={syncIcon} alt=" " />
                         </div>
@@ -171,7 +171,7 @@ class SecondPage extends React.Component {
                           Easily keep your database in sync across your Macs. It’s a bit like magic.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={multiselectIcon} alt=" " />
                         </div>
@@ -180,7 +180,7 @@ class SecondPage extends React.Component {
                           Select multiple projects for a swift overview of your combined hours and earnings.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={sessionsLogIcon} alt=" " />
                         </div>
@@ -189,7 +189,7 @@ class SecondPage extends React.Component {
                           Keep track of your projects in detail by using the session log to display their history.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={alertsIcon} alt=" " />
                         </div>
@@ -198,7 +198,7 @@ class SecondPage extends React.Component {
                           Left the clock ticking? Punch In will notify you once you wake up your Mac.
                         </h6>
                       </div>
-                    <div className="col-6 col-md-3">
+                    <div className="col-6 col-md-3 feature">
                         <div className="icon-wrapper">
                           <img src={backupIcon} alt=" " />
                         </div>
@@ -310,7 +310,7 @@ class SecondPage extends React.Component {
                   Punch In features for iOS
                 </h3>
                 <div className="row">
-                  <div className="col-6 col-md-3">
+                  <div className="col-6 col-md-3 feature">
                     <div className="icon-wrapper">
                       <img src={searchIcon} alt=" " />
                     </div>
@@ -319,7 +319,7 @@ class SecondPage extends React.Component {
                       Can’t find what you are looking for? Search your projects, clients or archive.
                     </h6>
                   </div>
-                  <div className="col-6 col-md-3">
+                  <div className="col-6 col-md-3 feature">
                     <div className="icon-wrapper">
                       <img src={sessionsLogIcon} alt=" " />
                     </div>
@@ -328,7 +328,7 @@ class SecondPage extends React.Component {
                       Keep track of your projects in detail by using the session log to display their history.
                     </h6>
                   </div>
-                  <div className="col-6 col-md-3">
+                  <div className="col-6 col-md-3 feature">
                     <div className="icon-wrapper">
                       <img src={alertsIcon} alt=" " />
                     </div>
@@ -337,7 +337,7 @@ class SecondPage extends React.Component {
                       Left the clock ticking? Punch In will notify you once you wake up your Mac.
                     </h6>
                   </div>
-                  <div className="col-6 col-md-3">
+                  <div className="col-6 col-md-3 feature">
                     <div className="icon-wrapper">
                       <img src={syncIcon} alt=" " />
                     </div>

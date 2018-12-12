@@ -27,12 +27,12 @@ html {
         .text-wrapper {
           text-align: left;
           margin: {
-            top: 300px;
-            bottom: 300px;
+            top: 20vh;
+            bottom: 250px;
           }
           @media #{$xlarge-and-down} {
             margin: {
-              top: 240px;
+              top: 15vh;
               bottom: 200px;
             }
           }
@@ -83,6 +83,9 @@ html {
             position: relative;
             left: 0;
           } 
+          @media #{$large-only} {
+            width: 60%;
+          } 
           &.hidden {
               transform: translateY(10px);
               opacity: 0;
@@ -96,7 +99,7 @@ html {
       .hiw {
         overflow: hidden;
         color: $dark-gray-text;
-        padding-top:80px;
+        padding-top: 100px;
         background-color: $white;
         transition: opacity 1s;
         &.hidden {

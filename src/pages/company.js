@@ -90,11 +90,6 @@ class companyPage extends React.Component {
                  </div>
                </div>
           </div>
-          
-          
-         
-          
-          
           <div className="section newsletter">
             <div className="container">
               <div className="row">

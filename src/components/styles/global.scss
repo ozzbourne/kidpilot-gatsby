@@ -457,11 +457,18 @@ html {
                   a {
                     font-size: 25px;
                     padding: 8px 0 8px 0px; //60px last when left-centered menu on mobile
+                    &:active {
+                      color: black;
+                      background-color: $light-gray;
+                    }
                   }
-                  a[href="/punchin.html"]:hover {
+                  a[href="/punchin/ios"]:hover {
                     background-color: $light-orange;
                   }  
-                  a[href="/something.html"]:hover {
+                  a[href="/punchin/mac"]:hover {
+                    background-color: $light-orange;
+                  }  
+                  a[href="/something"]:hover {
                     background-color: #91aa9d;
                   } 
                 }
@@ -510,28 +517,24 @@ html {
         background-color: $kidpilot-blue;
         .hero-wrapper {
           position: absolute;
-          top: 150px;
+          top: 160px;
           left:50%;
           transform: translateX(-50%);
           width: 100%;
           overflow: hidden;
-          z-index:1;
-          
+//          z-index:1;
+          @media #{$small-and-down} {
+            top: 100px;
+          }
           img {
             text-align:center;
-            width: 70%;
-            margin-top:20px;
+            width: 250px;
+            margin: 0 auto;
             opacity: 1;
             transition:all 2s;
-            @media #{$xlarge-and-up} {
-              width:45%;
-            }
-            @media #{$medium-and-down} {
-              width:100%;
-            }
             @media #{$small-and-down} {
-              width:120%;
-              margin-left:0px;
+              width: 200px;
+              
             }
             &.hidden {
               transform: translateY(10px);
@@ -576,6 +579,9 @@ html {
       background-color: $light-gray;
       padding: 100px 0 60px 0;
       border-bottom: 1px solid $divider;
+      @media #{$small-and-down} {
+        padding-top: 60px;
+      }
       h5 {
         line-height: 27px;
         span {
@@ -604,8 +610,17 @@ html {
       background-color: $light-gray;
       text-align: center;
       overflow: hidden;
+      @media #{$small-and-down} {
+        padding: {
+          top: 65px;
+          bottom: 65px;
+        }
+      }
       .container {
         width: 80%;
+        @media #{$small-and-down} {
+          width: 97%;
+        }
       }
       img, .img-link {
         width: 125px;
@@ -619,7 +634,10 @@ html {
           font-family: $semibold;
         }
         padding-top: 5px;
-        padding-bottom:35px;
+        padding-bottom: 35px;
+        @media #{$small-and-down} {
+          padding-bottom: 15px;  
+        }
       }
       h5 {
         line-height: 27px;
@@ -658,7 +676,7 @@ html {
         }
         @media #{$medium-and-down} { 
           &:last-of-type {
-            margin-top: 100px;
+            margin-top: 55px;
           }
         }
       }

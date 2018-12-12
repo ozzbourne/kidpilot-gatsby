@@ -7,7 +7,8 @@ html {
         height: 85vh;
         padding-top: 120px;
         @media #{$small-and-down} {
-          height: 100vh;
+          min-height: 520px;
+          padding-top: 70px;
         }
         h5 {
           transition: none;
@@ -25,22 +26,28 @@ html {
             bottom: 0;
             @media #{$large-and-down} {
               width: 200%;
-
+            }
+            @media #{$small-and-down} {
+              width: 340%;
             }
           }
         }
         .hero-wrapper{
           height: 100%;
+          @media #{$small-and-down} {
+              padding-bottom: 50px;
+            }
           img {
             width: 60%;
             @media #{$medium-and-down} {
               width: 90%;
             }
             @media #{$small-and-down} {
-              width: 140%;
+              width: 200%;
               position: absolute;
-              left: -20%;
-              margin-bottom: 45px;
+              left: -50%;
+              padding-bottom: 45px;
+              padding-top: 35px;
             }
           }
           h3 {
@@ -84,6 +91,7 @@ html {
           }
           @media #{$small-and-down} {
             padding-top: 140px;
+            max-width: 95%;
           }
         }
         h5 {
@@ -101,108 +109,108 @@ html {
     }
     .newsletter {
       background-color: $light-gray;
-        padding:70px 0 70px 0;
+      padding:70px 0 70px 0;
+      @media #{$small-and-down} {
+        padding: 50px 0 60px 0;
+      }
+      h3 {
+        margin-bottom:40px;
         @media #{$small-and-down} {
-          padding: 50px 0 60px 0;
-        }
-        h3 {
-          margin-bottom:40px;
-          @media #{$small-and-down} {
-            margin-bottom:30px;
-          }
-        }
-        .confirmation {
-            &.hidden {
-              display:none;
-            }
-            display:block;
-            width:100%;
-            background-color:$light-gray;
-            z-index:1;
-            .confirmation-text {
-              cursor:pointer;
-              color: red;
-              margin:0;
-              margin-top:25px;
-              height:100%;
-              @media #{$small-and-down} {
-                padding-top:8px;
-              }
-            }
-            .confirmation-extra {
-              color: $gray;
-              background-color: $light-gray;
-              
-            }
-          }
-        .subscribe {
-          position:relative;
-        }
-        input[type=email] {
-          background-color: transparent;
-          width:280px;
-          border:2px solid $dark-gray-graphic;
-          border-radius: 5px;
-          height:50px;
-          margin-bottom:0;
-          font-family: $regular;
-          font-size: 16px;
-          color: $dark-gray-graphic;
-          padding:0 15px;
-          box-shadow:none;
-          -webkit-appearance: none;
-          &.placeholder { 
-            color:$gray; 
-          }
-          &:-moz-placeholder { 
-            color:$gray; 
-          }
-          &::-webkit-input-placeholder { 
-            color:$gray; 
-          }
-          @media #{$small-and-down} {
-            width:calc(100% - 62px);
-            margin-bottom:13px;
-          }
-        }
-        input:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0px 1000px $gray inset;
-            -webkit-text-fill-color: $white !important;
-        }
-        button {
-          font-family: $regular;
-          cursor: pointer;
-          transition:all .5s;
-          position:relative;
-          top:1px;
-          width:160px;
-          height:50px;
-          line-height: 50px;
-          border-radius:8px;
-          border:1px solid $black;
-          font-size: 16px;
-          margin-left:15px;
-          background-color: $black;
-          color: $white;
-          @media #{$small-and-down} {
-            margin-left:0px;
-            margin-top: 20px;
-            line-height: 40px;
-          }
-          &:hover {
-            background-color: $dark-gray-graphic;
-            border-color:$dark-gray-graphic;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-          }
-        }
-        p {
-          margin-top:20px;
-          color: $gray;
-          @media #{$small-and-down} {
-            margin: 30px auto 0 auto;
-            width: 70%;
-          } 
+          margin-bottom:30px;
         }
       }
+      .confirmation {
+          &.hidden {
+            display:none;
+          }
+          display:block;
+          width:100%;
+          background-color:$light-gray;
+          z-index:1;
+          .confirmation-text {
+            cursor:pointer;
+            color: red;
+            margin:0;
+            margin-top:25px;
+            height:100%;
+            @media #{$small-and-down} {
+              padding-top:8px;
+            }
+          }
+          .confirmation-extra {
+            color: $gray;
+            background-color: $light-gray;
+
+          }
+        }
+      .subscribe {
+        position:relative;
+      }
+      input[type=email] {
+        background-color: transparent;
+        width:280px;
+        border:2px solid $dark-gray-graphic;
+        border-radius: 5px;
+        height:50px;
+        margin-bottom:0;
+        font-family: $regular;
+        font-size: 16px;
+        color: $dark-gray-graphic;
+        padding:0 15px;
+        box-shadow:none;
+        -webkit-appearance: none;
+        &.placeholder { 
+          color:$gray; 
+        }
+        &:-moz-placeholder { 
+          color:$gray; 
+        }
+        &::-webkit-input-placeholder { 
+          color:$gray; 
+        }
+        @media #{$small-and-down} {
+          width:calc(100% - 62px);
+          margin-bottom:13px;
+        }
+      }
+      input:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0px 1000px $gray inset;
+          -webkit-text-fill-color: $white !important;
+      }
+      button {
+        font-family: $regular;
+        cursor: pointer;
+        transition:all .5s;
+        position:relative;
+        top:1px;
+        width:160px;
+        height:50px;
+        line-height: 50px;
+        border-radius:8px;
+        border:1px solid $black;
+        font-size: 16px;
+        margin-left:15px;
+        background-color: $black;
+        color: $white;
+        @media #{$small-and-down} {
+          margin-left:0px;
+          margin-top: 0px;
+          line-height: 40px;
+        }
+        &:hover {
+          background-color: $dark-gray-graphic;
+          border-color:$dark-gray-graphic;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+      }
+      p {
+        margin-top:20px;
+        color: $gray;
+        @media #{$small-and-down} {
+          margin: 30px auto 0 auto;
+          width: 70%;
+        } 
+      }
+    }
   }
 }

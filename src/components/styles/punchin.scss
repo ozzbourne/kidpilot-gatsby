@@ -4,13 +4,21 @@ html {
       background-color: $light-orange;
       color: $dark-gray-text;
       .jumbotron-custom {
-        z-index: 2;
+        //z-index: 2;
         height: 100vh;
         background: $light-orange;
         @media #{$large-and-down} {
-          height: auto;
+          height: 800px;
         }
-        
+        @media #{$medium-and-down} {
+          height: 700px;
+        }
+        @media #{$small-and-down} {
+          height: 640px;
+        }
+        @media #{$xsmall-and-down} {
+          height: 600px;
+        }
         h2 {
           &.hidden {
             transform: translateY(10px);
@@ -23,6 +31,9 @@ html {
           margin-top: 1.5rem;
           &.hidden {
             transform: translateY(10px); 
+          }
+          @media #{$small-and-down} {
+            margin-top: 0;
           }
         }
         .text-wrapper {
@@ -54,7 +65,9 @@ html {
             margin-top: 80px;
             max-width: 100%;
           }
-          
+          @media #{$small-and-down} {
+            margin-top: 60px;
+          }
         }
         .apple-link {
           transition: all 1.2s;
@@ -84,15 +97,15 @@ html {
           transition: all .5s;
           position: absolute;
           left: 0;
-          //bottom: -100px;
+          //bottom: -50px;
           width: 200%;
           @media #{$xlarge-and-down} {
             left: 6%;
             width: 90%;
           }
           @media #{$large-and-down} {
-            position: relative;
-            left: 0;
+//            position: relative;
+//            left: 0;
             margin-bottom: 25px;
           }
           
@@ -109,7 +122,19 @@ html {
           height: 100vh;
           background-color: white;
           @media #{$xlarge-and-down} {
-            display: none;
+            margin-top: 400px;
+          }
+          @media #{$large-and-down} {
+            margin-top: 320px;
+          }
+          @media #{$medium-and-down} {
+            margin-top: 220px;
+          }
+          @media #{$small-and-down} {
+            margin-top: 180px;
+          }
+          @media #{$xsmall-and-down} {
+            margin-top: 140px;
           }
         }
       }
@@ -162,10 +187,16 @@ html {
         padding: 50px 0 0 0;
         background-color: $white;
         text-align: left;
+        @media #{$small-and-down} {
+          text-align: center;
+        }
         //border-bottom: 1px solid $divider;
         overflow: hidden;
         h3 {
           padding-bottom: 30px;
+          @media #{$small-and-down} {
+            padding-bottom: 12px;
+          }
           &.control {
             @media #{$small-and-down} {
               padding-top: 50px;
@@ -213,16 +244,28 @@ html {
         background-color: $white;
         border-bottom: 1px solid $divider;
         text-align: center;
-        .row {
-          .col-12 {
-            vertical-align: top;
-            margin-bottom: 40px;
+        @media #{$small-and-down} {
+          padding-bottom: 60px;
+          border-bottom: none;
+        }
+//        .row {
+//          .col-12 {
+//            vertical-align: top;
+//            margin-bottom: 40px;
+//          }
+//        }
+        .feature {
+          @media #{$small-and-down} {
+            padding: {
+              right: 7px;
+              left: 7px;
+            }
           }
         }
         h3 {
           padding-bottom: 65px;
           @media #{$small-and-down} {
-            text-align: left;
+            padding-bottom: 20px;
           }
         }
         .icon-wrapper {
@@ -239,7 +282,7 @@ html {
           }
         }
         h4 {
-          padding-top:20px;
+          padding-top: 20px;
           padding-bottom: 20px;
         }
         p {

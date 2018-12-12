@@ -43,13 +43,9 @@ class IndexPage extends React.Component {
           <div className="section jumbotron-custom">
            <div className="hero-bottom">
            <div className="hero-wrapper">
-             <div className="row">
-                <div className="col-4 offset-4">
-                  <Link className="img-link" to="/punchin/ios">
-                    <img className="hero-image hidden" src={punchinHeroImg} alt="Punch In Hero"/>
-                  </Link>
-                </div>
-             </div>
+              <Link className="img-link" to="/punchin/ios">
+                <img className="hero-image hidden" src={punchinHeroImg} alt="Punch In Hero"/>
+              </Link>
              <div className="text-wrapper container">
                 <h1 className="hidden">Punch In for iOS</h1>
                 <h5 className="hidden">The friendly and efficient worktimer for Mac is now available for iPhone and iPad.</h5>
@@ -68,7 +64,7 @@ class IndexPage extends React.Component {
                </div>
              </div>
           </div>
-          <div id="apps" className="apps">
+      <div id="apps" className="apps">
         <div className="container">
           <div className="row">
             <div className="app col-12 col-md-6">
