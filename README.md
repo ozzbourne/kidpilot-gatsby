@@ -1,8 +1,17 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+<h1 align="center">
+  wearekidpilot
+</h1>
+
+Follow instructions below to build with Gatsby and React.
+
+Site deployed via Netlify. 
+
+Push changes to master at GitHub and the site will auto-update.
+Guide: http://rogerdudler.github.io/git-guide/
+
+<p color="red">Before pushing to GitHub, read second line in layout.js. Reference to bootstrap JS needs to be removes. Live site reads from CDN.</p>
+
+
 <h1 align="center">
   Gatsby's default starter
 </h1>
@@ -13,7 +22,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site. Oskar**
+1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
