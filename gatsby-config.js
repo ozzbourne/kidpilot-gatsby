@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'We are Kidpilot',
+        short_name: 'Kidpilot',
         start_url: '/',
         background_color: '#C8EBFF',
         theme_color: '#C8EBFF',
