@@ -9,7 +9,7 @@ Site deployed via Netlify.
 Push changes to master at GitHub and the site will auto-update.
 Guide: http://rogerdudler.github.io/git-guide/
 
-<p color="red">Before pushing to GitHub, read second line in layout.js. Reference to bootstrap JS needs to be removes. Live site reads from CDN.</p>
+Before pushing to GitHub, read second line in layout.js. Reference to bootstrap JS needs to be removes. Live site reads from CDN.
 
 
 <h1 align="center">
