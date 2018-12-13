@@ -1,11 +1,13 @@
 import React from 'react'
 import $ from 'jquery';
 import Helmet from 'react-helmet'
-
 import companyHero from '../images/plane-hero.png'
-
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
+import CustomForm from '../components/CustomForm'
 import Header from '../components/header'
 import Layout from '../components/layout'
+
+const url = "https://fatbrothers.us19.list-manage.com/subscribe/post?u=a15975cdac19c20c602f04396&amp;id=d13e243c15";
 
 class companyPage extends React.Component {  
   componentDidMount(){
@@ -16,25 +18,6 @@ class companyPage extends React.Component {
     setTimeout(function(){
       $('h5.hidden, h2.hidden, h6.hidden, h4.hidden, .apple-link.hidden').removeClass('hidden');
     }, 500);
-    
-    (function($){$.ajaxChimp={responses:{"We have sent you a confirmation email":0,"Please enter a value":1,"An email address must contain a single @":2,"The domain portion of the email address is invalid (the portion after the @: )":3,"The username portion of the email address is invalid (the portion before the @: )":4,"This email address looks fake or invalid. Please enter a real email address":5},translations:{en:null},init:function(selector,options){$(selector).ajaxChimp(options)}};$.fn.ajaxChimp=function(options){$(this).each(function(i,elem){var form=$(elem);var email=form.find("input[type=email]");var label=form.find("label[for="+email.attr("id")+"]");var settings=$.extend({url:form.attr("action"),language:"en"},options);var url=settings.url.replace("/post?","/post-json?").concat("&c=?");form.attr("novalidate","true");email.attr("name","EMAIL");form.submit(function(){var msg;function successCallback(resp){if(resp.result==="success"){msg="We have sent you a confirmation email";label.removeClass("error").addClass("valid");email.removeClass("error").addClass("valid")}else{email.removeClass("valid").addClass("error");label.removeClass("valid").addClass("error");var index=-1;try{var parts=resp.msg.split(" - ",2);if(parts[1]===undefined){msg=resp.msg}else{var i=parseInt(parts[0],10);if(i.toString()===parts[0]){index=parts[0];msg=parts[1]}else{index=-1;msg=resp.msg}}}catch(e){index=-1;msg=resp.msg}}if(settings.language!=="en"&&$.ajaxChimp.responses[msg]!==undefined&&$.ajaxChimp.translations&&$.ajaxChimp.translations[settings.language]&&$.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]]){msg=$.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]]}label.html(msg);label.show(2e3);if(settings.callback){settings.callback(resp)}}var data={};var dataArray=form.serializeArray();$.each(dataArray,function(index,item){data[item.name]=item.value});$.ajax({url:url,data:data,success:successCallback,dataType:"jsonp",error:function(resp,text){console.log("mailchimp ajax submit error: "+text)}});var submitMsg="Submitting...";if(settings.language!=="en"&&$.ajaxChimp.translations&&$.ajaxChimp.translations[settings.language]&&$.ajaxChimp.translations[settings.language]["submit"]){submitMsg=$.ajaxChimp.translations[settings.language]["submit"]}label.html(submitMsg).show(2e3);return false})});return this}})($);
-    
-    $('#mc-form').ajaxChimp({
-      url: 'https://wearekidpilot.us13.list-manage.com/subscribe/post?u=ab1cde36fdda5421103c641ed&amp;id=9dbf30c533',
-      callback: callbackFunction
-    });
-    
-    function callbackFunction(resp) {
-      $('.confirmation').removeClass('hidden');
-        if (resp.result === 'success') {
-          $('.confirmation-text').text('Nice! Welcome aboard.');
-          $('.confirmation-extra').text('');
-          $('#mc-email').val('');
-        } else {
-          $('.confirmation-text').text('Oops! Something went wrong, please try again!');
-          $('.confirmation-extra').text('Tried more than once? Send us an email.');
-        }
-    }
   }
 
   
@@ -96,16 +79,18 @@ class companyPage extends React.Component {
                 <div className="col-12">
                   <h3>Get Kidpilot news delivered to your inbox</h3>
                   <div className="subscribe">
-                    <form id="mc-form">
-                      <input id="mc-email" type="email" placeholder="Your email address" />
-                      <button type="submit">Subscribe</button>
-                    </form> 
+                  <MailchimpSubscribe
+                    url={url}
+                    render={({ subscribe, status, message }) => (
+                      <CustomForm
+                        status={status}
+                        message={message}
+                        onValidated={formData => subscribe(formData)}
+                      />
+                    )}
+                  />
                   </div>
                   <p>No span, no junk, just great content. Unsubscribe with one click.</p>
-                  <div className="confirmation hidden">
-                      <h5 className="confirmation-text"></h5>
-                      <p className="confirmation-extra"></p>
-                    </div>
                 </div>
               </div>
             </div>

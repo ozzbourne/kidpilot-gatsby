@@ -8,6 +8,7 @@ import tjingScorecard from '../images/tjing-scorecard.png'
 import Header from '../components/header'
 import Helmet from 'react-helmet'
 
+
 //If different layouts is used, replace "Layout" below and wrap page content with it
 import Layout from '../components/layout'
 
@@ -163,7 +164,7 @@ class IndexPage extends React.Component {
         </div>
       </div>
 
-        </div>
+    </div>
        
       </Layout>
     )
