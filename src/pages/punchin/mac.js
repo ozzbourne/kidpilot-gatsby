@@ -7,7 +7,9 @@ import { Link } from 'gatsby'
 
 import macAppStore from '../../images/Download_on_the_Mac_App_Store_Badge_US-UK_165x40.svg'
 import appStore from '../../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
+
 import punchInHero from '../../images/punchin-header.png'
+import punchInMobileHero from '../../images/punchin-mobile-hero.png'
 import punchInMacIcon from '../../images/punchin-mac-icon.png'
 import punchInIcon from '../../images/punchin-ios-icon.png'
 import punchInUI from '../../images/punchin-ios-ui.png'
@@ -66,18 +68,20 @@ class SecondPage extends React.Component {
                     <h1 className="hidden">Punch In</h1>
                     <h2 className="hidden">A simple and efficient worktimer for Mac, iPhone and iPad.</h2>
                     <h5 className="hidden">Make time tracking less time consuming. Punch In runs smoothly in the background while you focus on what you do best. Less really is more.</h5>
-                    <div className="apple-link hidden">
-                      <a href="https://appstore.com/mac/punchin">
+                    <div className="apple-link hidden row">
+                      <a className="d-none d-md-block col-6" href="https://appstore.com/mac/punchin">
                         <img className="store-link" src={macAppStore} alt="Mac App Store"/>
                       </a>
-                      <a href="https://appstore.com/punchintimetracker">
+                      <a className="col-12 col-md-6" href="https://appstore.com/punchintimetracker">
                         <img className="store-link" src={appStore} alt="App Store"/>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-xl-7">
-                  <img className="hero-image hidden" src={punchInHero} alt="Punch In Hero" />
+                  <img className="hero-image hidden d-none d-sm-block" src={punchInHero} alt="Punch In Hero" />
+                  <img className="hero-image hidden d-sm-none" src={punchInMobileHero} alt="Punch In Hero" />
+
                 </div>
               </div>
             </div>
@@ -333,7 +337,7 @@ class SecondPage extends React.Component {
                     </div>
                     <h4>Alerts</h4>
                     <h6>
-                      Left the clock ticking? Punch In will notify you once you wake up your Mac.
+                      Left the clock ticking? Punch In will notify you if you wish.
                     </h6>
                   </div>
                   <div className="col-6 col-md-3 feature">
@@ -342,7 +346,7 @@ class SecondPage extends React.Component {
                     </div>
                     <h4>Sync</h4>
                     <h6>
-                      Easily keep your database in sync across your Macs. It’s a bit like magic.
+                      Easily keep your database in sync across your devices. It’s a bit like magic.
                     </h6>
                   </div>
                   

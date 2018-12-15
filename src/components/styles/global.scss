@@ -1,18 +1,18 @@
 html {
   height:100%;
   position: relative;
-  &.open {
-    //overflow: hidden;
-  }
+  // &.open {
+  //   overflow: hidden;
+  // }
   body {
     background-color: $kidpilot-blue;
     text-align:center;
     font-family: $regular;
     position: relative;
     height: 100%;
-    &.open {
-      //overflow: hidden;
-    }
+    // &.open {
+    //   overflow: hidden;
+    // }
     h1 {
     font-family: $bold;
     font-size: 49px;
@@ -173,7 +173,8 @@ html {
     }
     
     //'!important' overrides all code for a-tags scattered around the SASS files.
-    //Only applies to the links with class img-link
+    //Only applies to the links with class img-link, makes images clickable, but removes 
+    //hover effects and design from links.
     .img-link {
       margin: 0 !important;
       border: none !important;
@@ -367,6 +368,26 @@ html {
               }
             }
           }
+          .dropdown .dropdown-menu{
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            display: block;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: rotate(-6deg);
+            transform-origin: 0% 40%;
+            margin-top: -15px;
+          }
+          .dropdown.show .dropdown-menu {
+            transform: rotate(0deg);
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0px;
+          }
         }
         
         @media #{$medium-and-down} {
@@ -540,14 +561,13 @@ html {
               transform: translateY(10px);
               opacity: 0;
               @media #{$small-and-down} {
-                width:120%;
+                //width:120%;
                 margin-left:10px;
               }
             }
           }
           
           a {
-            
             margin: 2rem auto 1rem auto;
             @include button-link($dark-blue, 8px, $white, $dark-blue, 35px, 10px, $mouseover, $white);
           }

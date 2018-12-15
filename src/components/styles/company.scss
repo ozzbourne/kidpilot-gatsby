@@ -7,8 +7,11 @@ html {
         height: 85vh;
         padding-top: 120px;
         @media #{$small-and-down} {
-          height: 550px;
+          height: calc(100px + 100vw);
           padding-top: 70px;
+        }
+        @media #{$xsmall-and-down} {
+          height: calc(120px + 100vw);
         }
         h5 {
           transition: none;
@@ -43,9 +46,9 @@ html {
               width: 90%;
             }
             @media #{$small-and-down} {
-              width: 200%;
+              width: 150%;
               position: absolute;
-              left: -50%;
+              left: -25%;
               padding-bottom: 45px;
               padding-top: 35px;
             }

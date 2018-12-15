@@ -14,10 +14,10 @@ html {
           height: 700px;
         }
         @media #{$small-and-down} {
-          height: 640px;
+          height: calc(500px + 100vw);
         }
         @media #{$xsmall-and-down} {
-          height: 600px;
+          height: calc(450px + 100vw);
         }
         h2 {
           &.hidden {
@@ -67,7 +67,9 @@ html {
           }
           @media #{$small-and-down} {
             margin-top: 60px;
+            margin-bottom: 30px;
           }
+          
         }
         .apple-link {
           transition: all 1.2s;
@@ -75,51 +77,48 @@ html {
             float: left;
             margin-top: 1.5rem;
             height: 45px;  
-            &:nth-of-type(1) {
-              margin-right: 30px;
-              @media #{$small-and-down} {
-              margin-right: 10px;
-            }
-            }
+            // &:nth-of-type(1) {
+            //   margin-right: 30px;
+            //   @media #{$small-and-down} {
+            //     margin-right: 0px;
+            //   }
+            // }
             @media #{$xlarge-and-down} {
               float: none;
+              margin-bottom: 2.5rem;
             }
-            @media #{$medium-and-down} {
-              height: 30px;
+            @media #{$small-and-down} {
+              margin-bottom: 0;
             }
           }
           &.hidden {
-            transform: translateY(20px);
+            transform: translateY(10px);
             opacity: 0;
           }
         }
         .hero-image {
-          transition: all .5s;
+          transition: all 2s;
           position: absolute;
           left: 0;
-          //bottom: -50px;
           width: 200%;
           @media #{$xlarge-and-down} {
             left: 6%;
             width: 90%;
           }
           @media #{$large-and-down} {
-//            position: relative;
-//            left: 0;
             margin-bottom: 25px;
           }
-          
+          @media #{$small-and-down} {
+            width: 65%;
+            left: 18%;
+          }
           &.hidden {
               transform: translateY(10px);
               opacity: 0;
-              @media #{$small-and-down} {
-                width:120%;
-                margin-left:10px;
-              }
             }
         }
         .whitespace{
-          height: 100vh;
+          height: 2000px;
           background-color: white;
           @media #{$xlarge-and-down} {
             margin-top: 400px;
@@ -131,10 +130,10 @@ html {
             margin-top: 220px;
           }
           @media #{$small-and-down} {
-            margin-top: 180px;
+            margin-top: calc(50px + 100vw);
           }
           @media #{$xsmall-and-down} {
-            margin-top: 140px;
+            margin-top: calc(100vw);
           }
         }
       }
@@ -189,6 +188,7 @@ html {
         text-align: left;
         @media #{$small-and-down} {
           text-align: center;
+          padding-top: 20px;
         }
         //border-bottom: 1px solid $divider;
         overflow: hidden;
