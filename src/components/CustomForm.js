@@ -20,16 +20,16 @@ const CustomForm = ({ status, message, onValidated }) => {
         <button onClick={submit}>
           Submit
         </button>
-        {status === "sending" && <div style={{ color: "blue" }}>Verifying...</div>}
+        {status === "sending" && <div style={{ color: "blue", paddingTop: "12px" }}>Verifying...</div>}
         {status === "error" && (
           <div
-            style={{ color: "red" }}
+            style={{ color: "red", paddingTop: "12px" }}
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
         {status === "success" && (
           <div
-            style={{ color: "green" }}
+            style={{ color: "green", paddingTop: "12px" }}
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}

@@ -41,6 +41,7 @@ html {
               padding-bottom: 50px;
             }
           img {
+            transition: all 2s;
             width: 60%;
             @media #{$medium-and-down} {
               width: 90%;
@@ -51,6 +52,10 @@ html {
               left: -25%;
               padding-bottom: 45px;
               padding-top: 35px;
+            }
+            &.hidden {
+              transform: translateY(10px);
+              opacity: 0;
             }
           }
           h3 {
