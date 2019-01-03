@@ -433,7 +433,7 @@ html {
               }
             }
             ul {
-              text-align: center;
+              //text-align: center;
               flex-direction: column !important;
               position: relative;
               width: 100%;
@@ -483,7 +483,7 @@ html {
                   }
                   a {
                     font-size: 25px;
-                    padding: 8px 0 8px 0px; //60px last when left-centered menu on mobile
+                    padding: 8px 0 8px calc(50% - 90px);
                     &:active {
                       color: black;
                       background-color: $light-gray;

@@ -251,7 +251,9 @@ class SecondPage extends React.Component {
                 <div className="container app">
                   <div className="row">
                     <div className="col-12 col-lg-8 offset-lg-2">
-                      <img src={punchInMacIcon} alt="Punch In Mac App" />
+                      <a className="img-link" href="https://appstore.com/mac/punchin">
+                        <img src={punchInMacIcon} alt="Punch In Mac App" />
+                      </a>
                       <h3>
                         Get Punch In for Mac
                       </h3>
@@ -287,7 +289,7 @@ class SecondPage extends React.Component {
                       Use it on all your devices
                     </h3>
                     <h5>
-                      Easily keep your database in sync across your devices using dropbox. It’s a bit like magic.
+                      Easily keep your database in sync across your devices using dropbox. It’s a bit like magic. (Coming in version 1.0)
                     </h5>
                   </div>
                   <div className="col-12 col-md-6 text-section">
@@ -319,7 +321,7 @@ class SecondPage extends React.Component {
                     </div>
                     <h4>Search</h4>
                     <h6>
-                      Can’t find what you are looking for? Search your projects, clients or archive.
+                      Can’t find what you are looking for? Search your projects, clients or archive. (Coming in version 1.0)
                     </h6>
                   </div>
                   <div className="col-6 col-md-3 feature">
@@ -346,7 +348,7 @@ class SecondPage extends React.Component {
                     </div>
                     <h4>Sync</h4>
                     <h6>
-                      Easily keep your database in sync across your devices. It’s a bit like magic.
+                      Easily keep your database in sync across your devices. It’s a bit like magic. (Coming in version 1.0)
                     </h6>
                   </div>
                   
@@ -388,7 +390,9 @@ class SecondPage extends React.Component {
               <div className="container app">
                 <div className="row">
                   <div className="col-12 col-lg-8 offset-lg-2">
-                    <img src={punchInIcon} alt="Punch In iOS App" />
+                    <a className="img-link" href="https://appstore.com/punchintimetracker">
+                      <img src={punchInIcon} alt="Punch In iOS App" />
+                    </a>
                     <h3>
                       Get Punch In for iOS
                     </h3>

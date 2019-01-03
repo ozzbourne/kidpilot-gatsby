@@ -195,7 +195,9 @@ class SomethingPage extends React.Component {
             <div className="container app">
               <div className="row">
                 <div className="col-12 col-lg-6 offset-lg-3">
-                  <img src={somethingIcon} alt="Something App" />
+                  <a className="img-link" href="http://appstore.com/somethingtocatcheverything">
+                    <img src={somethingIcon} alt="Something App" />
+                  </a>
                   <h3>
                     Get Something
                   </h3>
