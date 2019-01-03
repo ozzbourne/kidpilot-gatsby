@@ -52,7 +52,7 @@ class Header extends React.Component {
         <div className="navigation">
           <ul className="nav flex-row">
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mac Apps<img className="menu-arrow" src={arrow} alt="Toggler Arrow"/></a>
+              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mac Appz<img className="menu-arrow" src={arrow} alt="Toggler Arrow"/></a>
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/punchin/mac"><img className="menu-icon" src={punchinMacIcon} alt="Punch In for Mac"/>Punch In</Link>
