@@ -1,6 +1,7 @@
 html {
   body {
     .company {
+      background: $kidpilot-blue;
       .jumbotron-custom {
         color: $black;
         background: $kidpilot-blue;
@@ -127,30 +128,30 @@ html {
           margin-bottom:30px;
         }
       }
-      .confirmation {
-          &.hidden {
-            display:none;
-          }
-          display:block;
-          width:100%;
-          background-color:$light-gray;
-          z-index:1;
-          .confirmation-text {
-            cursor:pointer;
-            color: red;
-            margin:0;
-            margin-top:25px;
-            height:100%;
-            @media #{$small-and-down} {
-              padding-top:8px;
-            }
-          }
-          .confirmation-extra {
-            color: $gray;
-            background-color: $light-gray;
+      // .confirmation {
+      //     &.hidden {
+      //       display:none;
+      //     }
+      //     display:block;
+      //     width:100%;
+      //     background-color:$light-gray;
+      //     z-index:1;
+      //     .confirmation-text {
+      //       cursor: pointer;
+      //       color: red;
+      //       margin:0;
+      //       margin-top:25px;
+      //       height:100%;
+      //       @media #{$small-and-down} {
+      //         padding-top:8px;
+      //       }
+      //     }
+      //     .confirmation-extra {
+      //       color: $gray;
+      //       background-color: $light-gray;
 
-          }
-        }
+      //     }
+      //   }
       .subscribe {
         position:relative;
       }
@@ -187,7 +188,7 @@ html {
           -webkit-text-fill-color: $white !important;
       }
       button {
-        font-family: $regular;
+        font-family: $semibold;
         cursor: pointer;
         transition:all .5s;
         position:relative;

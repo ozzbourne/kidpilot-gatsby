@@ -1,6 +1,7 @@
 html {
   body {
     .index {
+      background: $kidpilot-blue;
       .jumbotron-custom {
         background: $kidpilot-blue;
         @media #{$small-and-down} {

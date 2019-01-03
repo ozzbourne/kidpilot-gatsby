@@ -210,7 +210,7 @@ class SomethingPage extends React.Component {
                 </a>
               </div>
               <div className="row">
-                <div className="col-12 release-notes">
+                <div className="col-12 release-notes release-notes-something">
                   <div className="mt-4">
                     <a href="https://blog.wearekidpilot.com/tagged/release-notes-something">Release notes</a>
                     <p>Requires iOS 10.3 or newer. Compatible with iPhone, iPad and iPod touch.</p>

@@ -100,7 +100,10 @@ html {
           transition: all 2s;
           position: absolute;
           left: 0;
-          width: 200%;
+          width: 170%;
+          @media #{$xlarge-and-up} {
+            top: 100px;
+          }
           @media #{$xlarge-and-down} {
             left: 6%;
             width: 90%;
@@ -327,7 +330,9 @@ html {
           a {
             color: $orange;
             font-family: $semibold;
-            
+          }
+          p {
+            margin-top: 7px;
           }
         }
       }

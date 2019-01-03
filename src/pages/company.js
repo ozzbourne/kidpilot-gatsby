@@ -90,7 +90,7 @@ class companyPage extends React.Component {
                     )}
                   />
                   </div>
-                  <p>No span, no junk, just great content. Unsubscribe with one click.</p>
+                  <p>No spam, no junk, just great content. Unsubscribe with one click.</p>
                 </div>
               </div>
             </div>
