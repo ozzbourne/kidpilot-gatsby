@@ -7,7 +7,7 @@ import CustomForm from '../components/CustomForm'
 import Header from '../components/header'
 import Layout from '../components/layout'
 
-const url = "https://fatbrothers.us19.list-manage.com/subscribe/post?u=a15975cdac19c20c602f04396&amp;id=d13e243c15";
+const url = "http://wearekidpilot.us13.list-manage.com/subscribe/post?u=ab1cde36fdda5421103c641ed&amp;id=9dbf30c533";
 
 class companyPage extends React.Component {  
   componentDidMount(){
