@@ -251,7 +251,7 @@ class SecondPage extends React.Component {
                 <div className="container app">
                   <div className="row">
                     <div className="col-12 col-lg-8 offset-lg-2">
-                      <a className="img-link" href="https://appstore.com/mac/punchin">
+                      <a target="_blank" className="img-link" href="https://appstore.com/mac/punchin">
                         <img src={punchInMacIcon} alt="Punch In Mac App" />
                       </a>
                       <h3>
@@ -263,7 +263,7 @@ class SecondPage extends React.Component {
                     </div>
                   </div>  
                   <div className="row">
-                    <a href="https://appstore.com/mac/punchin">
+                    <a target="_blank" href="https://appstore.com/mac/punchin">
                       <img className="store-link" src={macAppStore} alt="Mac App Store"/>
                     </a>
                   </div>
@@ -390,7 +390,7 @@ class SecondPage extends React.Component {
               <div className="container app">
                 <div className="row">
                   <div className="col-12 col-lg-8 offset-lg-2">
-                    <a className="img-link" href="https://appstore.com/punchintimetracker">
+                    <a target="_blank" className="img-link" href="https://appstore.com/punchintimetracker">
                       <img src={punchInIcon} alt="Punch In iOS App" />
                     </a>
                     <h3>
@@ -402,7 +402,7 @@ class SecondPage extends React.Component {
                   </div>
                 </div>  
                 <div className="row">
-                  <a href="https://appstore.com/punchintimetracker">
+                  <a target="_blank" href="https://appstore.com/punchintimetracker">
                     <img className="store-link" src={appStore} alt="App Store"/>
                   </a>
                 </div>

@@ -10,27 +10,27 @@ const Footer = () => (
       <div className="col-lg-1"></div>
       <div className="col-6 col-md-2 offset-md-1 offset-lg-0 footer-section">
         <h5>Mac Apps</h5>
-        <Link to="/punchin/mac">Punch In</Link>
+        <Link className="footer-nav-item" to="/punchin/mac">Punch In</Link>
       </div>
       <div className="col-6 col-md-2 footer-section">
         <h5>iOS Apps</h5>
-        <Link to="/punchin/ios">Punch In</Link><br/>
-        <Link to="/something">Something</Link><br/>
-        <a href="https://spinndiscgolf.com">Tjing</a>
+        <Link className="footer-nav-item" to="/punchin/ios">Punch In</Link><br/>
+        <Link className="footer-nav-item" to="/something">Something</Link><br/>
+        <a className="footer-nav-item" href="https://spinndiscgolf.com">Tjing</a>
       </div>
       <div className="col-6 col-md-2 footer-section">
         <h5>Follow</h5>
-        <a href="https://twitter.com/wearekidpilot">Twitter</a><br/>
-        <a href="https://www.facebook.com/kidpilot/">Facebook</a>
+        <a className="footer-nav-item" href="https://twitter.com/wearekidpilot">Twitter</a><br/>
+        <a className="footer-nav-item" href="https://www.facebook.com/kidpilot/">Facebook</a>
       </div>
       <div className="col-6 col-md-2 footer-section">
         <h5>Company</h5>
-        <Link to="/company">About</Link><br/>
-        <a href="mailto:tower@wearekidpilot.com">Contact us</a>
+        <Link className="footer-nav-item" to="/company">About</Link><br/>
+        <a className="footer-nav-item" href="mailto:tower@wearekidpilot.com">Contact us</a>
       </div>
       <div className="col-12 col-md-2 footer-section">
         <h5>News</h5>
-        <a href="https://blog.wearekidpilot.com">Blog</a>
+        <a className="footer-nav-item" href="https://blog.wearekidpilot.com">Blog</a>
       </div>
       <div className="col-lg-1"></div>
     </div>

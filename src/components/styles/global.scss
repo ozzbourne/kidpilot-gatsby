@@ -308,21 +308,17 @@ html {
               font-size: 16px;
               padding:0;
               position:relative;
-              &.active-page {
-                pointer-events: none;
-                color: $gray;
-              }
               &:hover {
                 text-decoration: none;
                 background-color: transparent;
-                color: $gray;
+                //color: $gray;
               }
-              &:hover > .menu-arrow {
-                -moz-filter:opacity(.4);
-                -webkit-filter:opacity(.4);
-                -ms-filter:opacity(.4);
-                filter:opacity(.4);
-              }
+              // &:hover > .menu-arrow {
+              //   -moz-filter:opacity(.4);
+              //   -webkit-filter:opacity(.4);
+              //   -ms-filter:opacity(.4);
+              //   filter:opacity(.4);
+              // }
               & .menu-arrow {
                 display: inline-block;
                 width: 12px;
@@ -332,16 +328,11 @@ html {
               }
             }
           }
-          .dropdown.show .dropdown-toggle{
-              color: $gray;
-          }
+          // .dropdown.show .dropdown-toggle{
+          //     color: $gray;
+          // }
           .dropdown-toggle::after {
             display: none;
-          }
-          .dropdown a.active-page {
-            border-radius: 8px;
-            background-color: $light-gray-menu;
-            color: $dark-gray-text;
           }
           .dropdown-menu {
             //left: 25px;
@@ -729,10 +720,10 @@ html {
       a {
         font-family: $semibold;
         color: $white;
-        &:hover {
-          text-decoration: none;
-          color: $gray; 
-        }
+        // &:hover {
+        //   text-decoration: none;
+        //   color: $gray; 
+        // }
       }
       img {
         margin-top: 70px;
@@ -763,7 +754,7 @@ html {
       }
     }
     //Animated underscore on hover
-    .release-notes a {
+    .release-notes a, .nav-item, .footer-nav-item {
       display: inline-block;
       color: $orange;
       text-decoration: none;
@@ -783,8 +774,21 @@ html {
         width: 100%;
       }
     }
+    //Sets different color for other elements that use the animated underscore
     .release-notes.release-notes-something a::after {
       background: $dark-blue-something;
+    }
+    .nav-item::after {
+        background: $black;
+    }
+    .footer-nav-item::after {
+      background: $white;
+  }
+    //Select only the two first items in the nav to have smaller underscore
+    .nav-item:nth-child(1), .nav-item:nth-child(2){
+      &:hover::after {
+        width: 80%;
+      }
     }
   }
 }
