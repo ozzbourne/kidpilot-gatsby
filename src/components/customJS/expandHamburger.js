@@ -26,8 +26,10 @@ export default function expandHamburger(){
     $('html, body').animate({
       scrollTop: position
     }, 0);
+
+    //Wierd solution for solving fadeOut on mobile menu when closing it.
     setTimeout(function() {
       $('.navigation').toggleClass('open');
-    }, 300);
+    }, 1800);
   }
 };
