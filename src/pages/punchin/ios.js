@@ -69,10 +69,10 @@ class SecondPage extends React.Component {
                     <h2 className="hidden">A simple and efficient worktimer for Mac, iPhone and iPad.</h2>
                     <h5 className="hidden">Make time tracking less time consuming. Punch In runs smoothly in the background while you focus on what you do best. Less really is more.</h5>
                     <div className="apple-link hidden row">
-                      <a className="d-none d-md-block col-6" href="https://appstore.com/mac/punchin">
+                      <a target="_blank" className="d-none d-md-block col-6" href="https://appstore.com/mac/punchin">
                         <img className="store-link" src={macAppStore} alt=" "/>
                       </a>
-                      <a className="col-12 col-md-6" href="https://appstore.com/punchintimetracker">
+                      <a target="_blank" className="col-12 col-md-6" href="https://appstore.com/punchintimetracker">
                         <img className="store-link" src={appStore} alt=" "/>
                       </a>
                     </div>

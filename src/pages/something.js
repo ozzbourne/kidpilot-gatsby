@@ -57,7 +57,7 @@ class SomethingPage extends React.Component {
                     <h2 className="hidden">Catch groundbreaking ideas or everyday moments within seconds. Refreshingly simple.</h2>
                     <div className="apple-link hidden">
                       <h6><span>Free</span> for iPhone, iPad and iPod touch</h6>
-                      <a href="http://appstore.com/somethingtocatcheverything">
+                      <a target="_blank" href="http://appstore.com/somethingtocatcheverything">
                         <img className="store-link" src={appStore} alt="App Store"/>
                       </a>
                     </div>
