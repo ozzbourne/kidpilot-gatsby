@@ -754,35 +754,8 @@ html {
       }
     }
     //Animated underscore on hover
-    .release-notes a, .footer-nav-item {
-      display: inline-block;
-      color: $orange;
-      text-decoration: none;
-      &::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        background: $orange;
-        -webkit-transition: width .3s ease;
-        -moz-transition: width .3s ease;
-        -ms-transition: width .3s ease;
-        -o-transition: width .3s ease;
-        transition: width .3s ease;
-      }
-      &:hover::after {
-        width: 100%;
-      }
-    }
-    //Sets different color for other elements that use the animated underscore
-    .release-notes.release-notes-something a::after {
-      background: $dark-blue-something;
-    }
-    .footer-nav-item::after {
-      background: $white;
-  }
-    @media #{$large-and-up} {
-      .nav-item {
+    @media (pointer: fine) {
+      .release-notes a, .footer-nav-item {
         display: inline-block;
         color: $orange;
         text-decoration: none;
@@ -802,15 +775,44 @@ html {
           width: 100%;
         }
       }
-      .nav-item::after {
-        background: $black;
+      //Sets different color for other elements that use the animated underscore
+      .release-notes.release-notes-something a::after {
+        background: $dark-blue-something;
       }
-        //Select only the two first items in the nav to have smaller underscore
-      .nav-item:nth-child(1), .nav-item:nth-child(2){
-        &:hover::after {
-          width: 80%;
+      .footer-nav-item::after {
+        background: $white;
+    }
+      @media #{$large-and-up} {
+        .nav-item {
+          display: inline-block;
+          color: $orange;
+          text-decoration: none;
+          &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $orange;
+            -webkit-transition: width .3s ease;
+            -moz-transition: width .3s ease;
+            -ms-transition: width .3s ease;
+            -o-transition: width .3s ease;
+            transition: width .3s ease;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+        .nav-item::after {
+          background: $black;
+        }
+          //Select only the two first items in the nav to have smaller underscore
+        .nav-item:nth-child(1), .nav-item:nth-child(2){
+          &:hover::after {
+            width: 80%;
+          }
         }
       }
-    }
+    } 
   }
 }
