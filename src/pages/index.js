@@ -121,7 +121,7 @@ class IndexPage extends React.Component {
           <div className="row">
             <div className="col-12 col-md-5 offset-md-1">
               <div className="disc-golf-cta">
-                <h3>Tjing</h3>
+                <h3>Spinn Disc Golf</h3>
                 <h5>The new standard in Disc Golf scoring. Find and play events, keep scores and track your performance with highly detailed stats and more. Getting better is up to you, but we think we can help.</h5>
                 <a href="https://spinndiscgolf.com">
                   <p>Learn more</p>

@@ -16,7 +16,7 @@ const Footer = () => (
         <h5>iOS Apps</h5>
         <Link className="footer-nav-item" to="/punchin/ios">Punch In</Link><br/>
         <Link className="footer-nav-item" to="/something">Something</Link><br/>
-        <a className="footer-nav-item" href="https://spinndiscgolf.com">Tjing</a>
+        <a className="footer-nav-item" href="https://spinndiscgolf.com">Spinn Disc Golf</a>
       </div>
       <div className="col-6 col-md-2 footer-section">
         <h5>Follow</h5>
@@ -39,7 +39,7 @@ const Footer = () => (
         <img src={kidpilotLogo} alt="Kidpilot" />
       </div>
       <div className="col-12">
-        <p className="footer-bottom-text">&copy; 2018 Kidpilot</p>
+        <p className="footer-bottom-text">&copy; 2019 Kidpilot</p>
       </div>
     </div>
   </div>
