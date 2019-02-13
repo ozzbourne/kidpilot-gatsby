@@ -41,7 +41,7 @@ class SomethingPage extends React.Component {
              content: 'https://www.wearekidpilot.com/something' },
             { property: 'og:description', 
              content: "Snap photos, draw sketches, write notes, record audio. Something for iOS helps you catch and saves everything for you in one place. It's refreshingly simple" },
-            { property: 'og:image', content: `https://wearekidpilot.com${somethingIcon}` }
+            { property: 'og:image', content: `${somethingIcon}` }
           ]}
         >
           <html lang="en" />

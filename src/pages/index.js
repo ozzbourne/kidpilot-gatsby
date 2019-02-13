@@ -34,7 +34,7 @@ class IndexPage extends React.Component {
             { property: 'og:title', content: 'Kidpilot - We make apps you love to use' },
             { property: 'og:url', content: 'https://www.wearekidpilot.com/' },
             { property: 'og:description', content: 'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.' },
-            { property: 'og:image', content: `https://wearekidpilot.com${kidpilotLogo}` }
+            { property: 'og:image', content: `${kidpilotLogo}` }
           ]}
         >
           <html lang="en" />
