@@ -50,7 +50,7 @@ class PunchInPage extends React.Component {
             { property: 'og:title', 
              content: 'Punch In - a simple and efficient worktimer' },
             { property: 'og:url', 
-             content: 'https://www.wearekidpilot.com/punchin' },
+             content: 'https://wearekidpilot.com/punchin' },
             { property: 'og:description', 
              content: 'Punch In is a simple and efficient worktimer made to help you keep track of your work. Runs smoothly in the background while you focus on what you do best.' },
             { property: 'og:image', content: `https://wearekidpilot.com${punchInIcon}` }
