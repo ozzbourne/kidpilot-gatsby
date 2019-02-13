@@ -22,18 +22,18 @@ class Header extends React.Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
   
-  handleScroll = ev => {
-    this.setState({
-      x: window.scrollX,
-      y: window.scrollY
-    });
-    if (window.scrollY > 30){
-      this.setState({z: "scrolled"});
-    }
-    else {
-      this.setState({z: "unscrolled"});
-    }
-  };
+  // handleScroll = ev => {
+  //   this.setState({
+  //     x: window.scrollX,
+  //     y: window.scrollY
+  //   });
+  //   if (window.scrollY > 30){
+  //     this.setState({z: "scrolled"});
+  //   }
+  //   else {
+  //     this.setState({z: "unscrolled"});
+  //   }
+  // };
 
   render (){
     return (

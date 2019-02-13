@@ -53,6 +53,7 @@ class SecondPage extends React.Component {
              content: 'http://www.wearekidpilot.com/punchin/ios' },
             { property: 'og:description', 
              content: 'Punch In is a simple and efficient worktimer made to help you keep track of your work. Runs smoothly in the background while you focus on what you do best.' },
+            { property: 'og:image', content: `${punchInIcon}` }
           ]}
         >
           <html lang="en" />
