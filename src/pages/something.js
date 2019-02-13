@@ -38,7 +38,7 @@ class SomethingPage extends React.Component {
             { property: 'og:title', 
              content: 'Something to catch everything' },
             { property: 'og:url', 
-             content: 'http://www.wearekidpilot.com/something' },
+             content: 'https://www.wearekidpilot.com/something' },
             { property: 'og:description', 
              content: "Snap photos, draw sketches, write notes, record audio. Something for iOS helps you catch and saves everything for you in one place. It's refreshingly simple" },
             { property: 'og:image', content: `${somethingIcon}` }
