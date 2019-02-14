@@ -1,6 +1,8 @@
 import React from 'react'
 import $ from 'jquery';
 import Helmet from 'react-helmet'
+
+import ogImage from '../images/punchin-hero-og-company.png'
 import companyHero from '../images/plane-hero.png'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import CustomForm from '../components/CustomForm'
@@ -35,6 +37,9 @@ class companyPage extends React.Component {
              content: 'http://www.wearekidpilot.com/company' },
             { property: 'og:description', 
              content: 'We make great and efficient productivity apps for iPhone, iPad and Mac. We keep things simple to help you focus on what you do best. Less really is more.' },
+             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+            { property: 'og:image:width', content: `1200` },
+            { property: 'og:image:height', content: `628` },
           ]}
         >
           <html lang="en" />

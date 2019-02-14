@@ -8,6 +8,7 @@ import { Link } from 'gatsby'
 import macAppStore from '../../images/Download_on_the_Mac_App_Store_Badge_US-UK_165x40.svg'
 import appStore from '../../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
 
+import ogImage from '../images/punchin-hero-og-mac.png'
 import punchInHero from '../../images/punchin-header.png'
 import punchInMobileHero from '../../images/punchin-mobile-hero.png'
 import punchInMacIcon from '../../images/punchin-mac-icon.png'
@@ -53,7 +54,9 @@ class SecondPage extends React.Component {
              content: 'https://wearekidpilot.com/punchin/mac' },
             { property: 'og:description', 
              content: 'Punch In is a simple and efficient worktimer made to help you keep track of your work. Runs smoothly in the background while you focus on what you do best.' },
-            { property: 'og:image', content: `https://wearekidpilot.com${punchInMacIcon}` }
+             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+             { property: 'og:image:width', content: `1200` },
+             { property: 'og:image:height', content: `628` },
           ]}
         >
           <html lang="en" />

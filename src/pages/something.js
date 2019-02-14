@@ -2,9 +2,9 @@ import React from 'react'
 import $ from 'jquery';
 import Helmet from 'react-helmet'
 
+import ogImage from '../images/punchin-hero-og-something.png'
 import appStore from '../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
 import somethingHero from '../images/something-hero.png'
-import punchinHeroImg from '../images/punchin-hero.png'
 import cameraImage from '../images/camera@2x.png'
 import notesImage from '../images/note2x.png'
 import recordImage from '../images/record@2x.png'
@@ -42,7 +42,9 @@ class SomethingPage extends React.Component {
              content: 'https://wearekidpilot.com/something' },
             { property: 'og:description', 
              content: "Snap photos, draw sketches, write notes, record audio. Something for iOS helps you catch and saves everything for you in one place. It's refreshingly simple" },
-            { property: 'og:image', content: `https://wearekidpilot.com${punchinHeroImg}` }
+             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+             { property: 'og:image:width', content: `1200` },
+             { property: 'og:image:height', content: `628` },
           ]}
         >
           <html lang="en" />

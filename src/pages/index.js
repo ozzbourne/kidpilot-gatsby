@@ -1,10 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import $ from 'jquery';
-// import ogLinkedInImage from '../images/punchin-hero-LinkedInOG.png'
-import ogImage from '../images/punchin-hero-FacebookOG.png'
+import ogImage from '../images/punchin-hero-og-index.png'
 import punchinHeroImg from '../images/punchin-hero.png'
-// import punchInImgForMeta from '../images/punchin-new-hero.png'
 import somethingIcon from '../images/something-icon.png'
 import punchInMacIcon from '../images/punchin-mac-icon.png'
 import tjingScorecard from '../images/tjing-scorecard.png'
