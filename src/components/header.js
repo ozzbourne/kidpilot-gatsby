@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from '@reach/router'
+import $ from 'jquery';
 import kidpilotLogo from '../images/logohead@2x.png'
 import punchinMacIcon from '../images/punchin-mac-icon-menu.png'
 import punchiniOSIcon from '../images/punchin-ios-icon-menu.png'
@@ -35,6 +36,41 @@ class Header extends React.Component {
   //   }
   // };
 
+  expandHamburger = () => {
+    var position = 0;
+  
+    if(!$('html').hasClass('open')) {
+      position = $(window).scrollTop();
+    }
+    
+    $('.hamburger').toggleClass('open');
+    if($('.hamburger').hasClass('open')) {
+      $('.navigation').toggleClass('open');
+      
+      setTimeout(function() {
+        $('.navigation').toggleClass('transition');
+      }, 100);
+      
+      $('body').toggleClass('open');
+      $('html').toggleClass('open');
+      $('html, body').animate({ scrollTop: position }, 0);
+
+    } else {
+      position = $(window).scrollTop();
+      $('.navigation').toggleClass('transition');
+      $('body').toggleClass('open');
+      $('html').toggleClass('open');
+      $('html, body').animate({
+        scrollTop: position
+      }, 0);
+
+      //Wierd solution for solving fadeOut on mobile menu when closing it.
+      setTimeout(function() {
+        $('.navigation').toggleClass('open');
+      }, 1800);
+    }
+  }
+
   render (){
     return (
       <nav className={`navbar ${this.state.z}`}>
@@ -43,7 +79,7 @@ class Header extends React.Component {
             <img className="kidpilot" src={kidpilotLogo} alt="Kidpilot Logo" />
           </Link>
         </div>
-        <div className="hamburger d-md-none" onClick={() => expandHamburger()}>
+        <div className="hamburger d-md-none" onClick={this.expandHamburger}>
           <span></span>
           <span></span>
           <span></span>

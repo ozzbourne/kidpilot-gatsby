@@ -34,10 +34,10 @@ class companyPage extends React.Component {
             { property: 'og:title', 
              content: 'About Kidpilot' },
             { property: 'og:url', 
-             content: 'http://www.wearekidpilot.com/company' },
+             content: 'http://wearekidpilot.com/company' },
             { property: 'og:description', 
              content: 'We make great and efficient productivity apps for iPhone, iPad and Mac. We keep things simple to help you focus on what you do best. Less really is more.' },
-             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+            { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
             { property: 'og:image:width', content: `1200` },
             { property: 'og:image:height', content: `628` },
           ]}
