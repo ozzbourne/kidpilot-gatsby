@@ -8,7 +8,7 @@ import { Link } from 'gatsby'
 import macAppStore from '../../images/Download_on_the_Mac_App_Store_Badge_US-UK_165x40.svg'
 import appStore from '../../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
 
-import ogImage from '../images/punchin-hero-og-mac.png'
+import ogImage from '../../images/punchin-hero-og-mac.png'
 import punchInHero from '../../images/punchin-header.png'
 import punchInMobileHero from '../../images/punchin-mobile-hero.png'
 import punchInMacIcon from '../../images/punchin-mac-icon.png'
