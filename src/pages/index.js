@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import $ from 'jquery';
-import ogLinkedInImage from '../images/punchin-hero-LinkedInOG.png'
-import ogFacebookImage from '../images/punchin-hero-FacebookOG.png'
+// import ogLinkedInImage from '../images/punchin-hero-LinkedInOG.png'
+import ogImage from '../images/punchin-hero-FacebookOG.png'
 import punchinHeroImg from '../images/punchin-hero.png'
-import punchInImgForMeta from '../images/punchin-new-hero.png'
+// import punchInImgForMeta from '../images/punchin-new-hero.png'
 import somethingIcon from '../images/something-icon.png'
 import punchInMacIcon from '../images/punchin-mac-icon.png'
 import tjingScorecard from '../images/tjing-scorecard.png'
@@ -36,12 +36,12 @@ class IndexPage extends React.Component {
             { property: 'og:title', content: 'Kidpilot - We make apps you love to use' },
             { property: 'og:url', content: 'https://wearekidpilot.com/' },
             { property: 'og:description', content: 'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.' },
-            { property: 'og:image', content: `https://wearekidpilot.com${ogLinkedInImage}` },
-            { property: 'og:image:width', content: `180` },
-            { property: 'og:image:height', content: `110` },
-            { property: 'og:image', content: `https://wearekidpilot.com${ogFacebookImage}` },
-            { property: 'og:image:width', content: `600` },
-            { property: 'og:image:height', content: `314` }
+            { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+            { property: 'og:image:width', content: `1200` },
+            { property: 'og:image:height', content: `628` },
+            // { property: 'og:image', content: `https://wearekidpilot.com${ogFacebookImage}` },
+            // { property: 'og:image:width', content: `600` },
+            // { property: 'og:image:height', content: `314` }
           ]}
         >
           <html lang="en" />
