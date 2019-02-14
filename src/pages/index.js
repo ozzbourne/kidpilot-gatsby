@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import $ from 'jquery';
 import punchinHeroImg from '../images/punchin-hero.png'
+import punchInImgForMeta from '../images/punchin-new-hero.png'
 import somethingIcon from '../images/something-icon.png'
 import punchInMacIcon from '../images/punchin-mac-icon.png'
 import tjingScorecard from '../images/tjing-scorecard.png'
@@ -33,7 +34,7 @@ class IndexPage extends React.Component {
             { property: 'og:title', content: 'Kidpilot - We make apps you love to use' },
             { property: 'og:url', content: 'https://wearekidpilot.com/' },
             { property: 'og:description', content: 'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.' },
-            { property: 'og:image', content: `https://wearekidpilot.com${punchinHeroImg}` }
+            { property: 'og:image', content: `https://wearekidpilot.com${punchInImgForMeta}` }
           ]}
         >
           <html lang="en" />
