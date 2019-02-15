@@ -2,7 +2,7 @@ import React from 'react'
 import $ from 'jquery';
 import Helmet from 'react-helmet'
 
-import ogImage from '../images/punchin-hero-og-something.png'
+import ogImage from '../images/metaImg-something.jpg'
 import appStore from '../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
 import somethingHero from '../images/something-hero.png'
 import cameraImage from '../images/camera@2x.png'

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../../components/header'
 import Layout from '../../components/layout'
-
+import ogImage from '../../images/metaImg-punchin.jpg'
 
 class PunchInPage extends React.Component {
   
@@ -21,6 +21,9 @@ class PunchInPage extends React.Component {
              content: 'http://www.wearekidpilot.com/punchin/faq' },
             { property: 'og:description', 
              content: 'Punch In is a simple and efficient worktimer made to help you keep track of your work. Runs smoothly in the background while you focus on what you do best.' },
+             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
+             { property: 'og:image:width', content: `1200` },
+             { property: 'og:image:height', content: `628` },
           ]}
         >
           <html lang="en" />

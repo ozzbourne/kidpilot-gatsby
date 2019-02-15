@@ -2,7 +2,7 @@ import React from 'react'
 import $ from 'jquery';
 import Helmet from 'react-helmet'
 
-import ogImage from '../images/punchin-hero-og-company.png'
+import ogImage from '../images/metaImg-index.jpg'
 import companyHero from '../images/plane-hero.png'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import CustomForm from '../components/CustomForm'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import $ from 'jquery';
-import ogImage from '../images/punchin-hero-og-index.png'
+import ogImage from '../images/metaImg-index.jpg'
 import punchinHeroImg from '../images/punchin-hero.png'
 import somethingIcon from '../images/something-icon.png'
 import punchInMacIcon from '../images/punchin-mac-icon.png'
@@ -37,9 +37,6 @@ class IndexPage extends React.Component {
             { property: 'og:image', content: `https://wearekidpilot.com${ogImage}` },
             { property: 'og:image:width', content: `1200` },
             { property: 'og:image:height', content: `628` },
-            // { property: 'og:image', content: `https://wearekidpilot.com${ogFacebookImage}` },
-            // { property: 'og:image:width', content: `600` },
-            // { property: 'og:image:height', content: `314` }
           ]}
         >
           <html lang="en" />
