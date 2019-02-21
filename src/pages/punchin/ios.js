@@ -77,6 +77,7 @@ class SecondPage extends React.Component {
             <div className="whitespace row" id="section"></div>
           </div>
           <div className="section hiw">
+          {/* När knappen i ToggleButton klickas ändras vilken av komponenterna som skall visas m.h.a CSS. */}
             <ToggleButton activeBtn={"ios"}/>
             <MacSection displayProp={"none"}/>
             <IosSection displayProp={"block"}/>
