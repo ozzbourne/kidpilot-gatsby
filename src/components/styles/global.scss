@@ -1,12 +1,12 @@
 html {
-  height:100%;
+  height: 100%;
   position: relative;
   // &.open {
   //   overflow: hidden;
   // }
   body {
     background-color: $white;
-    text-align:center;
+    text-align: center;
     font-family: $regular;
     position: relative;
     height: 100%;
@@ -14,133 +14,77 @@ html {
     //   overflow: hidden;
     // }
     h1 {
-    font-family: $bold;
-    font-size: 49px;
-    margin:0;
-    @media #{$medium-and-down} {
+      font-family: $bold;
       font-size: 49px;
-      //38px
-    }
-    //iphone 4
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
+      margin: 0;
+      @media #{$medium-and-down} {
+        font-size: 49px;
+        //38px
+      }
+      //iphone 4
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 38px;
       }
-    //iphone 5
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
+      //iphone 5
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 38px;
       }
-    //iphone 6
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 667px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) { 
+      //iphone 6
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 38px;
       }
-    //iphone 6+
-    @media only screen 
-      and (min-device-width: 414px) 
-      and (max-device-width: 736px) 
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape) { 
+      //iphone 6+
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 38px;
       }
-    @media screen 
-      and (device-width: 320px) 
-      and (device-height: 640px) 
-      and (-webkit-device-pixel-ratio: 2) 
-      and (orientation: landscape) {
+      @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 38px;
       }
-    @media screen 
-      and (device-width: 320px) 
-      and (device-height: 640px) 
-      and (-webkit-device-pixel-ratio: 3) 
-      and (orientation: landscape) {
+      @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 38px;
       }
-    @media screen 
-      and (device-width: 360px) 
-      and (device-height: 640px) 
-      and (-webkit-device-pixel-ratio: 3) 
-      and (orientation: landscape) {
+      @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 38px;
       }
     }
     h2 {
       font-family: $light;
       font-size: 32px;
-      margin:0;
+      margin: 0;
       @media #{$medium-and-down} {
         font-size: 32px;
         //26px
       }
       //iphone 4
-      @media only screen 
-        and (min-device-width: 320px) 
-        and (max-device-width: 480px)
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: landscape) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 26px;
       }
       //iphone 5
-      @media only screen 
-        and (min-device-width: 320px) 
-        and (max-device-width: 568px)
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: landscape) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 26px;
       }
       //iphone 6
-      @media only screen 
-        and (min-device-width: 375px) 
-        and (max-device-width: 667px) 
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: landscape) { 
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 26px;
       }
       //iphone 6+
-      @media only screen 
-        and (min-device-width: 414px) 
-        and (max-device-width: 736px) 
-        and (-webkit-min-device-pixel-ratio: 3)
-        and (orientation: landscape) { 
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 26px;
       }
-      @media screen 
-        and (device-width: 320px) 
-        and (device-height: 640px) 
-        and (-webkit-device-pixel-ratio: 2) 
-        and (orientation: landscape) {
+      @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
         font-size: 26px;
       }
-      @media screen 
-        and (device-width: 320px) 
-        and (device-height: 640px) 
-        and (-webkit-device-pixel-ratio: 3) 
-        and (orientation: landscape) {
+      @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 26px;
       }
-      @media screen 
-        and (device-width: 360px) 
-        and (device-height: 640px) 
-        and (-webkit-device-pixel-ratio: 3) 
-        and (orientation: landscape) {
+      @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
         font-size: 26px;
       }
     }
     h3 {
       font-family: $bold;
       font-size: 28px;
-      margin:0;
+      margin: 0;
       @media #{$medium-and-down} {
         font-size: 28px;
       }
@@ -148,7 +92,7 @@ html {
     h4 {
       font-family: $regular;
       font-size: 21px;
-      margin:0;
+      margin: 0;
       @media #{$medium-and-down} {
         font-size: 21px;
       }
@@ -156,7 +100,7 @@ html {
     h5 {
       font-family: $regular;
       font-size: 16px;
-      margin:0;
+      margin: 0;
       @media #{$medium-and-down} {
         font-size: 16px;
       }
@@ -164,25 +108,27 @@ html {
     h6 {
       font-family: $light;
       font-size: 16px;
-      margin:0;
+      margin: 0;
     }
     p {
       font-family: $regular;
       font-size: 14px;
-      margin:0;
+      margin: 0;
     }
-    
+
     //'!important' overrides all code for a-tags scattered around the SASS files.
-    //Only applies to the links with class img-link, makes images clickable, but removes 
+    //Only applies to the links with class img-link, makes images clickable, but removes
     //hover effects and design from links.
     .img-link {
       margin: 0 !important;
       border: none !important;
       background-color: transparent !important;
       display: inline !important;
+      -webkit-transition: none !important;
       transition: none !important;
       padding: 0 !important;
       &:hover {
+        -webkit-box-shadow: none !important;
         box-shadow: none !important;
         background-color: transparent !important;
         color: transparent !important;
@@ -190,54 +136,59 @@ html {
       }
     }
     .row {
-      margin-bottom:0;
+      margin-bottom: 0;
     }
     nav {
       width: 100%;
       position: static;
       //position: fixed !important;
       z-index: 10;
-      background-color: rgba(255,255,255,0);
+      background-color: rgba(255, 255, 255, 0);
+      -webkit-box-shadow: none;
       box-shadow: none;
       padding: 30px 30px;
       height: auto;
       line-height: initial;
-      transition: all .5s cubic-bezier(0.7,0,0.3,1);
-//      &.scrolled {
-//        padding: 0px 30px 25px 30px;
-//        background-color: rgba(255,255,255,0.9);
-//      }
+      -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+      transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+      //      &.scrolled {
+      //        padding: 0px 30px 25px 30px;
+      //        background-color: rgba(255,255,255,0.9);
+      //      }
       @media #{$medium-and-down} {
         position: fixed !important;
         padding: 20px 15px;
         //background-color: $white;
-        
+
         &.scrolled {
           padding: 10px 20px;
-          background-color: rgba(255,255,255,.98);
+          background-color: rgba(255, 255, 255, 0.98);
         }
       }
       .brand {
-        float:left;
+        float: left;
         a {
           .kidpilot {
             margin-top: 0px;
             margin-left: 20px;
-            width:45px;
-            height:45px; 
-            position:fixed;
+            width: 45px;
+            height: 45px;
+            position: fixed;
             z-index: 1;
-            transition: all .3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
             &:hover {
+              -webkit-transform: rotate(13deg);
               transform: rotate(13deg);
             }
-            @media #{$medium-and-down} { 
+            @media #{$medium-and-down} {
               width: 35px;
               height: 35px;
               margin-top: 0px;
               margin-left: 0px;
               position: relative;
               &:hover {
+                -webkit-transform: none;
                 transform: none;
               }
             }
@@ -248,11 +199,13 @@ html {
         width: 25px;
         height: 30px;
         float: right;
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
+        -webkit-transition: 1s ease-in-out;
         transition: 1s ease-in-out;
         cursor: pointer;
         position: relative;
-        z-index:1;
+        z-index: 1;
         span {
           display: block;
           position: absolute;
@@ -262,12 +215,15 @@ html {
           border-radius: 0;
           opacity: 1;
           left: 0;
+          -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-          transition: .5s ease-in-out;
+          -webkit-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
           &:nth-child(1) {
             top: 5px;
           }
-          &:nth-child(2), &:nth-child(3) {
+          &:nth-child(2),
+          &:nth-child(3) {
             top: 13px;
           }
           &:nth-child(4) {
@@ -282,9 +238,11 @@ html {
               left: 50%;
             }
             &:nth-child(2) {
+              -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
             }
             &:nth-child(3) {
+              -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
             }
             &:nth-child(4) {
@@ -306,8 +264,8 @@ html {
               color: $dark-gray-text;
               font-family: $semibold;
               font-size: 16px;
-              padding:0;
-              position:relative;
+              padding: 0;
+              position: relative;
               &:hover {
                 text-decoration: none;
                 background-color: transparent;
@@ -324,7 +282,6 @@ html {
                 width: 12px;
                 margin-left: 10px;
                 padding-bottom: 2px;
-                
               }
             }
           }
@@ -336,27 +293,38 @@ html {
           }
           .dropdown-menu {
             //left: 25px;
-            padding: 0;
+            padding: {
+              top: 0.5rem;
+              bottom: 0.5rem;
+              left: 0;
+              right: 0;
+            }
             top: 2.3rem;
             border: none;
             border-radius: 8px;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+            -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+              0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+              0 2px 10px 0 rgba(0, 0, 0, 0.12);
             .menu-icon {
               width: 60px;
-              padding: .5rem;
+              padding: 0.5rem;
             }
-            li{
-              padding: .5rem;
+            li {
+              padding: {
+                left: 0.5rem;
+                right: 0.5rem;
+              }
               border-radius: 8px;
               a {
                 padding: 5px 80px 5px 5px;
                 &:hover {
-                border-radius: 8px;
-                background-color: $light-gray-menu;
-                color: $dark-gray-text;
-                @media #{$medium-and-down} {
-                  border-radius: 0px;
-                }
+                  border-radius: 8px;
+                  background-color: $light-gray-menu;
+                  color: $dark-gray-text;
+                  @media #{$medium-and-down} {
+                    border-radius: 0px;
+                  }
                 }
               }
             }
@@ -364,22 +332,22 @@ html {
           @media #{$large-and-up} {
             .dropdown-menu {
               left: 25px;
-            }  
-            .dropdown .dropdown-menu{
+            }
+            .dropdown .dropdown-menu {
               -webkit-transition: all 0.3s;
-              -moz-transition: all 0.3s;
-              -ms-transition: all 0.3s;
-              -o-transition: all 0.3s;
               transition: all 0.3s;
               display: block;
               overflow: hidden;
               opacity: 0;
               visibility: hidden;
+              -webkit-transform: rotate(-6deg);
               transform: rotate(-6deg);
+              -webkit-transform-origin: 0% 40%;
               transform-origin: 0% 40%;
               margin-top: -15px;
             }
             .dropdown.show .dropdown-menu {
+              -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
               opacity: 1;
               visibility: visible;
@@ -387,37 +355,45 @@ html {
             }
           }
         }
-        
+
         @media #{$medium-and-down} {
-          display:none;
+          display: none;
           position: fixed;
           width: 100%;
-          height:100%;
-          top:0;
-          left:0;
-          right:0;
-          bottom:0;
+          height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
           background-color: $white;
           &.open {
-            display:block;
-            opacity:0;
-            transition: opacity 1.2s cubic-bezier(0.7,0,0.3,1);
+            display: block;
+            opacity: 0;
+            -webkit-transition: opacity 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+            transition: opacity 1.2s cubic-bezier(0.7, 0, 0.3, 1);
             &.transition {
-              opacity:1;
+              opacity: 1;
               ul {
+                -webkit-box-orient: vertical !important;
+                -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
                 flex-direction: column !important;
                 li {
                   opacity: 1;
                   &:nth-child(1) {
+                    -webkit-transform: translateY(0px) scale(1);
                     transform: translateY(0px) scale(1);
                   }
                   &:nth-child(2) {
+                    -webkit-transform: translateY(0px) scale(1);
                     transform: translateY(0px) scale(1);
                   }
                   &:nth-child(3) {
+                    -webkit-transform: translateY(0px) scale(1);
                     transform: translateY(0px) scale(1);
                   }
                   &:nth-child(4) {
+                    -webkit-transform: translateY(0px) scale(1);
                     transform: translateY(0px) scale(1);
                   }
                 }
@@ -425,25 +401,33 @@ html {
             }
             ul {
               //text-align: center;
+              -webkit-box-orient: vertical !important;
+              -webkit-box-direction: normal !important;
+              -ms-flex-direction: column !important;
               flex-direction: column !important;
               position: relative;
               width: 100%;
               top: 23%;
               li {
-                transition: all .5s cubic-bezier(0.7,0,0.3,1) .5s;
-                float:none;
-                opacity:0;
+                -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0.5s;
+                transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0.5s;
+                float: none;
+                opacity: 0;
                 &:nth-child(1) {
-                    transform: translateY(-100px) scale(2);
-                  }
+                  -webkit-transform: translateY(-100px) scale(2);
+                  transform: translateY(-100px) scale(2);
+                }
                 &:nth-child(2) {
+                  -webkit-transform: translateY(-50px) scale(2);
                   transform: translateY(-50px) scale(2);
                 }
                 &:nth-child(3) {
+                  -webkit-transform: translateY(0px) scale(2);
                   transform: translateY(0px) scale(2);
                   margin-top: 16px;
                 }
                 &:nth-child(4) {
+                  -webkit-transform: translateY(50px) scale(2);
                   transform: translateY(50px) scale(2);
                   margin-top: 16px;
                 }
@@ -458,18 +442,18 @@ html {
                     font-size: 30px;
                   }
                 }
-                
               }
-              
-              .dropdown.show .dropdown-toggle{
+
+              .dropdown.show .dropdown-toggle {
                 background-color: $light-gray-menu;
               }
               .dropdown-menu {
                 top: 0;
+                -webkit-box-shadow: none;
                 box-shadow: none;
                 li {
                   padding: 0;
-                  &:hover{
+                  &:hover {
                     background-color: $white;
                   }
                   a {
@@ -480,15 +464,15 @@ html {
                       background-color: $light-gray;
                     }
                   }
-                  a[href="/punchin/ios"]:hover {
+                  a[href='/punchin/ios']:hover {
                     background-color: $light-orange;
-                  }  
-                  a[href="/punchin/mac"]:hover {
+                  }
+                  a[href='/punchin/mac']:hover {
                     background-color: $light-orange;
-                  }  
-                  a[href="/something"]:hover {
+                  }
+                  a[href='/something']:hover {
                     background-color: #91aa9d;
-                  } 
+                  }
                 }
               }
             }
@@ -498,91 +482,106 @@ html {
     }
     .jumbotron-custom {
       overflow: hidden;
-      padding-top:25px;
-      position:relative;
+      padding-top: 25px;
+      position: relative;
       height: 100vh;
       @media #{$medium-and-down} {
         height: 100vh;
       }
       color: $white;
       h1 {
+        -webkit-transition: all 2s;
         transition: all 2s;
-        opacity:1;
+        opacity: 1;
         margin: 1.5rem 0 0.5rem 0;
         color: $dark-gray-text;
         &.hidden {
-          transform:translateY(-10px);
-          opacity:0;
-        } 
-        
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+          opacity: 0;
+        }
       }
-      h5, h2 {
+      h5,
+      h2 {
+        -webkit-transition: all 2s;
         transition: all 2s;
-        opacity:1;
+        opacity: 1;
         margin: 0;
         color: $dark-gray-text;
         &.hidden {
-          transform:translateY(0px);
-          opacity:0;
-        } 
-        
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          opacity: 0;
+        }
       }
       .hero-bottom {
         position: absolute;
-        bottom:0;
-        width:100%;
+        bottom: 0;
+        width: 100%;
         height: 100%;
         background-color: $kidpilot-blue;
         .hero-wrapper {
           position: absolute;
           top: 160px;
-          left:50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
           width: 100%;
           overflow: hidden;
-//          z-index:1;
+          //          z-index:1;
           @media #{$small-and-down} {
             top: 100px;
           }
           img {
-            text-align:center;
+            text-align: center;
             width: 250px;
             margin: 0 auto;
             opacity: 1;
-            transition:all 2s;
+            -webkit-transition: all 2s;
+            transition: all 2s;
             @media #{$small-and-down} {
               width: 200px;
-              
             }
             &.hidden {
+              -webkit-transform: translateY(10px);
               transform: translateY(10px);
               opacity: 0;
               @media #{$small-and-down} {
                 //width:120%;
-                margin-left:10px;
+                margin-left: 10px;
               }
             }
           }
-          
+
           a {
             margin: 2rem auto 1rem auto;
-            @include button-link($dark-blue, 8px, $white, $dark-blue, 35px, 10px, $mouseover, $white);
+            @include button-link(
+              $dark-blue,
+              8px,
+              $white,
+              $dark-blue,
+              35px,
+              10px,
+              $mouseover,
+              $white
+            );
           }
         }
         .cta {
           a {
             img {
-              width:165px;
+              width: 165px;
               height: auto;
             }
           }
           p {
             color: $dark-gray-text;
-            padding-top:10px;
+            padding-top: 10px;
             a {
               color: $dark-gray-text;
               font-family: $regular;
-              transition:all .5s;
+              -webkit-transition: all 0.5s;
+              transition: all 0.5s;
               font-size: 16px;
               &:hover {
                 color: $kidpilot-blue;
@@ -614,7 +613,8 @@ html {
           padding: 8px;
           svg {
             fill: $dark-blue;
-            transition: all .5s;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
             &:hover {
               fill: $mouseover;
             }
@@ -639,7 +639,8 @@ html {
           width: 97%;
         }
       }
-      img, .img-link {
+      img,
+      .img-link {
         width: 125px;
         margin: auto;
       }
@@ -653,21 +654,28 @@ html {
         padding-top: 5px;
         padding-bottom: 35px;
         @media #{$small-and-down} {
-          padding-bottom: 15px;  
+          padding-bottom: 15px;
         }
       }
       h5 {
         line-height: 27px;
       }
-      
+
       .app {
         padding: 0 5%;
         @media #{$xlarge-and-up} {
           padding: 0 9%;
         }
         @media #{$medium-and-up} {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
         }
         .buttons {
@@ -678,8 +686,16 @@ html {
             a {
               //Include mixin button-link
               //border-color, border-radius, text-color, background-color, padding-leftright, padding-topbottom, hover-background, hover-text
-              @include button-link($dark-blue, 8px, $white, $dark-blue, 35px, 10px, $mouseover, $white);
-              
+              @include button-link(
+                $dark-blue,
+                8px,
+                $white,
+                $dark-blue,
+                35px,
+                10px,
+                $mouseover,
+                $white
+              );
             }
           }
           @media #{$medium-only} {
@@ -691,7 +707,7 @@ html {
             margin-top: 25px;
           }
         }
-        @media #{$medium-and-down} { 
+        @media #{$medium-and-down} {
           &:last-of-type {
             margin-top: 55px;
           }
@@ -702,7 +718,7 @@ html {
       background-color: $dark-gray-footer;
       font-family: $regular;
       font-size: 16px;
-      color:$white;
+      color: $white;
       padding: 90px 0;
       .footer-section {
         @media #{$medium-and-down} {
@@ -722,7 +738,7 @@ html {
         color: $white;
         // &:hover {
         //   text-decoration: none;
-        //   color: $gray; 
+        //   color: $gray;
         // }
       }
       img {
@@ -745,31 +761,32 @@ html {
       }
     }
     .store-link {
-      transition: all .5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
       &:hover {
+        -webkit-transform: scale(1.008);
         transform: scale(1.008);
-        transition: all .5s;
-        -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.3));
-        filter: drop-shadow(0px 3px 10px rgba(0,0,0,0.3));
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.3));
       }
     }
     //Animated underscore on hover
     @media (pointer: fine) {
-      .release-notes a, .footer-nav-item {
+      .release-notes a,
+      .footer-nav-item {
         display: inline-block;
         color: $orange;
         text-decoration: none;
-        &::after{
+        &::after {
           content: '';
           display: block;
           width: 0;
           height: 1px;
           background: $orange;
-          -webkit-transition: width .3s ease;
-          -moz-transition: width .3s ease;
-          -ms-transition: width .3s ease;
-          -o-transition: width .3s ease;
-          transition: width .3s ease;
+          -webkit-transition: width 0.3s ease;
+          transition: width 0.3s ease;
         }
         &:hover::after {
           width: 100%;
@@ -779,25 +796,25 @@ html {
       .release-notes.release-notes-something a::after {
         background: $dark-blue-something;
       }
+      .release-notes.release-notes-ouff a::after {
+        background: $red-ouff;
+      }
       .footer-nav-item::after {
         background: $white;
-    }
+      }
       @media #{$large-and-up} {
         .nav-item {
           display: inline-block;
           color: $orange;
           text-decoration: none;
-          &::after{
+          &::after {
             content: '';
             display: block;
             width: 0;
             height: 1px;
             background: $orange;
-            -webkit-transition: width .3s ease;
-            -moz-transition: width .3s ease;
-            -ms-transition: width .3s ease;
-            -o-transition: width .3s ease;
-            transition: width .3s ease;
+            -webkit-transition: width 0.3s ease;
+            transition: width 0.3s ease;
           }
           &:hover::after {
             width: 100%;
@@ -806,13 +823,14 @@ html {
         .nav-item::after {
           background: $black;
         }
-          //Select only the two first items in the nav to have smaller underscore
-        .nav-item:nth-child(1), .nav-item:nth-child(2){
+        //Select only the two first items in the nav to have smaller underscore
+        .nav-item:nth-child(1),
+        .nav-item:nth-child(2) {
           &:hover::after {
             width: 80%;
           }
         }
       }
-    } 
+    }
   }
 }

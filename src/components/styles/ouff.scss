@@ -1,0 +1,135 @@
+html {
+  body {
+    .ouff {
+      background-color: $white;
+      .jumbotron-custom {
+        z-index: 2;
+        height: auto;
+        background-color: $white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        @media #{$large-and-down} {
+          height: auto;
+        }
+        h1 {
+          color: $dark-gray-text;
+        }
+        h2 {
+          color: $dark-gray-text;
+          &.hidden {
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+          }
+        }
+        h6 {
+          color: $dark-gray-text;
+          margin-top: 1.5rem;
+          span {
+            font-family: $semibold;
+          }
+        }
+        .text-wrapper {
+          text-align: left;
+          margin: {
+            top: 35vh;
+            bottom: 250px;
+          }
+          @media #{$xlarge-and-down} {
+            margin: {
+              top: 25vh;
+              bottom: 200px;
+            }
+          }
+
+          @media #{$large-and-down} {
+            text-align: center;
+            margin: {
+              top: 100px;
+              bottom: 75px;
+            }
+            img {
+              float: none;
+            }
+            h2 {
+              font-size: 15px;
+            }
+          }
+        }
+        .apple-link {
+          -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+          img {
+            float: left;
+            margin-top: 1.5rem;
+            width: 150px;
+            @media #{$xlarge-and-down} {
+              float: none;
+            }
+          }
+          &.hidden {
+            -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+            opacity: 0;
+          }
+        }
+        .hero-image {
+          -webkit-transition: all 2s;
+          transition: all 2s;
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          width: 90%;
+          padding-right: 20px;
+          padding-left: 30px;
+          @media #{$xlarge-and-down} {
+            left: 2%;
+            width: 100%;
+          }
+          @media #{$large-and-down} {
+            position: relative;
+            left: 0;
+          }
+          @media #{$large-only} {
+            width: 60%;
+          }
+          &.hidden {
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            opacity: 0;
+          }
+        }
+      }
+      .apps {
+        background-color: $light-gray;
+        padding: 100px 0 70px 0;
+        @media #{$medium-and-down} {
+          padding: 0px 0 30px 0;
+        }
+        img {
+          width: 175px;
+        }
+        a {
+          margin: 0 auto;
+          img {
+            width: 140px;
+          }
+        }
+        .release-notes {
+          color: $gray;
+          a {
+            color: $red-ouff;
+            font-family: $semibold;
+          }
+          p {
+            color: $red-ouff;
+          }
+        }
+      }
+      .googlePlay img {
+        margin-left: 30px;
+        @media #{$xlarge-and-down} {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
