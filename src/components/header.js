@@ -5,7 +5,7 @@ import kidpilotLogo from '../images/logohead@2x.png'
 import punchinMacIcon from '../images/punchin-mac-icon-menu.png'
 import punchiniOSIcon from '../images/punchin-ios-icon-menu.png'
 import somethingIcon from '../images/something-icon-menu.png'
-import ouffIcon from '../images/ouff-Icon.png'
+import ouffIcon from '../images/ouff-icon.png'
 // import expandHamburger from './customJS/expandHamburger.js'
 import arrow from '../images/menu-arrow.svg'
 
