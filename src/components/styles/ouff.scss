@@ -36,7 +36,7 @@ html {
           @media #{$xlarge-and-down} {
             margin: {
               top: 25vh;
-              bottom: 200px;
+              bottom: 235px;
             }
           }
 
@@ -49,9 +49,9 @@ html {
             img {
               float: none;
             }
-            h2 {
-              font-size: 15px;
-            }
+            // h2 {
+            //   font-size: 15px;
+            // }
           }
         }
         .apple-link {
