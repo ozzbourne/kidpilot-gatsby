@@ -14,6 +14,10 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 
 class SomethingPage extends React.Component {
+  state = {
+    heroImg: ouffHero1,
+  }
+
   componentDidMount() {
     setTimeout(function() {
       $('h1.hidden, img.hero-image').removeClass('hidden')
@@ -24,12 +28,15 @@ class SomethingPage extends React.Component {
         'h5.hidden, h2.hidden, h6.hidden, h4.hidden, .apple-link.hidden'
       ).removeClass('hidden')
     }, 500)
-  }
-
-  render() {
     // Random hero images: heroImages[randNumber]
     const heroImages = [ouffHero1, ouffHero2, ouffHero3]
     const randNumber = Math.floor(Math.random() * heroImages.length)
+    // const heroImage = heroImages[randNumber]
+    this.setState({ heroImg: heroImages[randNumber] })
+    // console.log(heroImages[randNumber])
+  }
+
+  render() {
     return (
       <Layout>
         <Helmet
@@ -63,7 +70,7 @@ class SomethingPage extends React.Component {
         >
           <html lang="en" />
         </Helmet>
-        <div class="ouff">
+        <div className="ouff">
           <Header />
           <div className="section jumbotron-custom">
             <div className="container">
@@ -105,7 +112,7 @@ class SomethingPage extends React.Component {
                 <div className="col-12 col-lg-5">
                   <img
                     className="hero-image hidden"
-                    src={heroImages[randNumber]}
+                    src={this.state.heroImg}
                     alt="Ouff Hero"
                   />
                 </div>
