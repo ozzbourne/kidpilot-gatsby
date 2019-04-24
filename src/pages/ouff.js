@@ -2,7 +2,7 @@ import React from 'react'
 import $ from 'jquery'
 import Helmet from 'react-helmet'
 
-import ogImage from '../images/metaImg-something.jpg'
+import ogImage from '../images/metaImg-ouff.jpg'
 import appStore from '../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
 import googlePlayIcon from '../images/googlePlayIcon.png'
 import ouffHero1 from '../images/ouff-hero-1.png'
@@ -40,25 +40,25 @@ class SomethingPage extends React.Component {
     return (
       <Layout>
         <Helmet
-          title={'Something to catch everything'}
+          title={'Ouff - Daily insults'}
           meta={[
             {
               name: 'description',
               content:
-                "Snap photos, draw sketches, write notes, record audio. Something for iOS helps you catch and saves everything for you in one place. It's refreshingly simple",
+                'Ouff delivers daily insults with genuine affection. It’s all about the timing. Every day, once a week - when is up to you.',
             },
             {
               property: 'og:title',
-              content: 'Something to catch everything',
+              content: 'Ouff - Daily insults',
             },
             {
               property: 'og:url',
-              content: 'https://wearekidpilot.com/something',
+              content: 'https://wearekidpilot.com/ouff',
             },
             {
               property: 'og:description',
               content:
-                "Snap photos, draw sketches, write notes, record audio. Something for iOS helps you catch and saves everything for you in one place. It's refreshingly simple",
+                'Ouff delivers daily insults with genuine affection. It’s all about the timing. Every day, once a week - when is up to you.',
             },
             {
               property: 'og:image',
