@@ -1,0 +1,66 @@
+html {
+  body {
+    .notFoundPage {
+      background-color: $blue-404;
+      nav .navigation ul li a {
+        color: black;
+      }
+      nav .hamburger span {
+        background: black;
+      }
+      .jumbotron-custom {
+        height: 90vh;
+        // color: black;
+        background-color: $blue-404;
+        @media #{$medium-and-down} {
+          height: 80vh;
+        }
+        @media #{$small-and-down} {
+          height: 750px;
+        }
+        h5,
+        h1 {
+          color: $white;
+        }
+        .hero-bottom {
+          background-color: $blue-404;
+          // color: black;
+          .hero-wrapper {
+            z-index: 2;
+            .button {
+              padding: {
+                top: 5px;
+                bottom: 5px;
+              }
+            }
+          }
+          .cta {
+            width: 100%;
+            height: 100%;
+            .moon {
+              width: 100%;
+              height: 100%;
+              background: url('../../images/moonandback.png') no-repeat bottom;
+              background-size: 50%;
+              position: absolute;
+              bottom: 0;
+              @media #{$xlarge-and-down} {
+                background-size: 70%;
+              }
+              @media #{$large-and-down} {
+                width: 100%;
+                background-size: 80%;
+              }
+              @media #{$medium-and-down} {
+                background-size: 95%;
+              }
+              @media #{$small-and-down} {
+                background-size: 140%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
