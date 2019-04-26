@@ -5,7 +5,7 @@ html {
       .jumbotron-custom {
         color: $black;
         background: $kidpilot-blue;
-        height: 85vh;
+        height: 850px;
         padding-top: 120px;
         @media #{$small-and-down} {
           height: calc(100px + 100vw);
@@ -59,7 +59,7 @@ html {
             }
             &.hidden {
               -webkit-transform: translateY(10px);
-                      transform: translateY(10px);
+              transform: translateY(10px);
               opacity: 0;
             }
           }
@@ -180,7 +180,7 @@ html {
         color: $dark-gray-graphic;
         padding: 0 15px;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         -webkit-appearance: none;
         &.placeholder {
           color: $gray;
@@ -227,7 +227,7 @@ html {
           border-color: $dark-gray-graphic;
           -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
             0 2px 10px 0 rgba(0, 0, 0, 0.12);
-                  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
             0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
       }
