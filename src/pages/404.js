@@ -70,6 +70,7 @@ class NotFoundPage extends React.Component {
               </div>
               <div className="cta">
                 <div className="moon" />
+                <div className="stars" />
               </div>
             </div>
           </div>
