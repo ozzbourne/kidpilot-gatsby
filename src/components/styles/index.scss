@@ -4,7 +4,7 @@ html {
       background: $red-ouff;
       .jumbotron-custom {
         background: $red-ouff;
-        height: 850px;
+        height: 750px;
         @media #{$small-and-down} {
           height: 550px;
         }
