@@ -519,7 +519,7 @@ html {
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: $kidpilot-blue;
+        // background-color: $red-ouff;
         .hero-wrapper {
           position: absolute;
           top: 160px;
@@ -612,18 +612,18 @@ html {
           }
           padding: 8px;
           svg {
-            fill: $dark-blue;
+            fill: $dark-gray-graphic;
             -webkit-transition: all 0.5s;
             transition: all 0.5s;
             &:hover {
-              fill: $mouseover;
+              fill: $gray;
             }
           }
         }
       }
     }
     .apps {
-      padding: 150px 0 100px 0;
+      padding: 150px 0 0 0;
       background-color: $light-gray;
       text-align: center;
       overflow: hidden;
@@ -686,16 +686,16 @@ html {
             a {
               //Include mixin button-link
               //border-color, border-radius, text-color, background-color, padding-leftright, padding-topbottom, hover-background, hover-text
-              @include button-link(
-                $dark-blue,
-                8px,
-                $white,
-                $dark-blue,
-                35px,
-                10px,
-                $mouseover,
-                $white
-              );
+              // @include button-link(
+              //   $dark-blue,
+              //   8px,
+              //   $white,
+              //   $dark-blue,
+              //   35px,
+              //   10px,
+              //   $mouseover,
+              //   $white
+              // );
             }
           }
           @media #{$medium-only} {
