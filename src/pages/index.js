@@ -11,11 +11,16 @@ import ouffIcon from '../images/ouff-icon.png'
 import tjingScorecard from '../images/tjing-scorecard.png'
 import Header from '../components/header'
 import Helmet from 'react-helmet'
+import allAppsFromFile from '../allApps'
+import SingleApp from '../components/SingleApp'
 
 //If different layouts is used, replace "Layout" below and wrap page content with it
 import Layout from '../components/layout'
 
 class IndexPage extends React.Component {
+  state = {
+    allApps: {},
+  }
   componentDidMount() {
     setTimeout(function() {
       $('h1.hidden, img.hero-image').removeClass('hidden')
@@ -26,6 +31,8 @@ class IndexPage extends React.Component {
         'h5.hidden, h2.hidden, h6.hidden, h4.hidden, .apple-link.hidden'
       ).removeClass('hidden')
     }, 500)
+
+    this.setState({ allApps: allAppsFromFile })
   }
   render() {
     return (
@@ -89,7 +96,18 @@ class IndexPage extends React.Component {
           </div>
           <div id="apps" className="apps">
             <div className="container">
-              <div className="row appRow">
+              <div class="row">
+                {/* Loopar genom alla appar som ligger i allApps.js. Ändringar görs där. */}
+                {Object.keys(this.state.allApps).map(key => (
+                  <SingleApp
+                    key={key}
+                    index={key}
+                    details={this.state.allApps[key]}
+                  />
+                ))}
+              </div>
+
+              {/* <div className="row appRow">
                 <div className="app col-12 col-md-6">
                   <div>
                     <Link className="img-link" to="/punchin/ios">
@@ -182,7 +200,7 @@ class IndexPage extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="disc-golf-section">

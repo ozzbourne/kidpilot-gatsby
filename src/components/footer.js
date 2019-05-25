@@ -26,10 +26,10 @@ const Footer = () => (
           <Link className="footer-nav-item" to="/ouff">
             Ouff
           </Link>
-          <br />
+          {/* <br />
           <a className="footer-nav-item" href="https://spinndiscgolf.com">
             Spinn Disc Golf
-          </a>
+          </a> */}
         </div>
         <div className="col-6 col-md-2 footer-section">
           <h5>Follow</h5>
