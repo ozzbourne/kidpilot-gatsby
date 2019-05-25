@@ -453,6 +453,7 @@ html {
                 box-shadow: none;
                 li {
                   padding: 0;
+                  margin-top: 0;
                   &:hover {
                     background-color: $white;
                   }
@@ -472,6 +473,9 @@ html {
                   }
                   a[href='/something']:hover {
                     background-color: #91aa9d;
+                  }
+                  a[href='/ouff']:hover {
+                    background-color: #f48b89;
                   }
                 }
               }
@@ -683,20 +687,6 @@ html {
           margin-bottom: 15px;
           .button {
             margin: 0 auto;
-            a {
-              //Include mixin button-link
-              //border-color, border-radius, text-color, background-color, padding-leftright, padding-topbottom, hover-background, hover-text
-              // @include button-link(
-              //   $dark-blue,
-              //   8px,
-              //   $white,
-              //   $dark-blue,
-              //   35px,
-              //   10px,
-              //   $mouseover,
-              //   $white
-              // );
-            }
           }
           @media #{$medium-only} {
             a {
@@ -707,11 +697,11 @@ html {
             margin-top: 25px;
           }
         }
-        @media #{$medium-and-down} {
-          &:last-of-type {
-            margin-top: 55px;
-          }
-        }
+        // @media #{$medium-and-down} {
+        //   &:last-of-type {
+        //     margin-top: 55px;
+        //   }
+        // }
       }
     }
     .footer {
