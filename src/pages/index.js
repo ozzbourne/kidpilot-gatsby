@@ -70,7 +70,7 @@ class IndexPage extends React.Component {
           <div className="section jumbotron-custom">
             <div className="hero-bottom">
               <div className="hero-wrapper">
-                <Link className="img-link" to="/punchin/ios">
+                <Link className="img-link" to="/ouff">
                   <img
                     className="hero-image hidden"
                     src={ouffHeroImg}
