@@ -164,8 +164,11 @@ class Header extends React.Component {
               <Link to="/company">Company</Link>
             </li>
             <li className="nav-item">
-              <a href="https://blog.wearekidpilot.com">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
+            {/* <li className="nav-item">
+              <a href="https://blog.wearekidpilot.com">Blog</a>
+            </li> */}
           </ul>
         </div>
       </nav>

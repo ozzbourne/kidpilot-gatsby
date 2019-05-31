@@ -1,0 +1,16 @@
+html {
+  body {
+    .blogPage {
+      nav {
+        background: white;
+      }
+      iframe {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        padding-top: 50px;
+      }
+    }
+  }
+}
