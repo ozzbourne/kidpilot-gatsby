@@ -64,12 +64,9 @@ class Footer extends React.Component {
             </div>
             <div className="col-12 col-md-2 footer-section">
               <h5>News</h5>
-              <a
-                className="footer-nav-item"
-                href="https://blog.wearekidpilot.com"
-              >
+              <Link className="footer-nav-item" to="/blog">
                 Blog
-              </a>
+              </Link>
             </div>
             <div className="col-lg-1" />
           </div>
