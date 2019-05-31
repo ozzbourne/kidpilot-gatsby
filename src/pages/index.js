@@ -91,7 +91,7 @@ class IndexPage extends React.Component {
           </div>
           <div id="apps" className="apps">
             <div className="container">
-              <div class="row">
+              <div className="row">
                 {/* Loopar genom alla appar som ligger i allApps.js. Ändringar görs där. */}
                 {Object.keys(this.state.allApps).map(key => (
                   <SingleApp

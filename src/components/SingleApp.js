@@ -14,7 +14,7 @@ class SingleApp extends React.Component {
     } = this.props.details
     return (
       <div className="app col-12 col-md-6">
-        <div class="gatsbyImage-linkWrapper">
+        <div className="gatsbyImage-linkWrapper">
           <Link className="img-link" to={linkToPage}>
             <GatsbyImage imgName={image} />
           </Link>

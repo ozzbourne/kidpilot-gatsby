@@ -8,7 +8,7 @@ class NotFoundPage extends React.Component {
     return (
       <Layout>
         <Helmet
-          title={'Kidpilot - Lastest news'}
+          title={'Kidpilot - Latest news'}
           // meta={[
           //   {
           //     name: 'description',
@@ -40,7 +40,7 @@ class NotFoundPage extends React.Component {
           <iframe
             height="100%"
             width="100%"
-            frameborder="0"
+            frameBorder="0"
             src="https://blog.wearekidpilot.com"
             title="Blog"
           />
