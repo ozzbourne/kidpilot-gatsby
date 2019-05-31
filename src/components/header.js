@@ -16,13 +16,13 @@ class Header extends React.Component {
     z: 'unscrolled',
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
-  }
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.handleScroll)
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this.handleScroll)
+  // }
 
   // handleScroll = ev => {
   //   this.setState({
