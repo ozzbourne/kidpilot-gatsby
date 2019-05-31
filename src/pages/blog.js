@@ -1,12 +1,15 @@
 import React from 'react'
-import Layout from '../components/layout'
+import LayoutBlogPage from '../components/layoutBlogPage'
 import Header from '../components/header'
 import Helmet from 'react-helmet'
 
-class NotFoundPage extends React.Component {
+class BlogPage extends React.Component {
+  componentDidMount() {
+    console.log(this.props.locaton)
+  }
   render() {
     return (
-      <Layout>
+      <LayoutBlogPage>
         <Helmet
           title={'Kidpilot - Latest news'}
           // meta={[
@@ -45,9 +48,9 @@ class NotFoundPage extends React.Component {
             title="Blog"
           />
         </div>
-      </Layout>
+      </LayoutBlogPage>
     )
   }
 }
 
-export default NotFoundPage
+export default BlogPage

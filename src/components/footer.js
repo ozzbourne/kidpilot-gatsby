@@ -3,16 +3,6 @@ import { Link } from 'gatsby'
 import kidpilotLogo from '../images/kidpilot-logo-footer.png'
 
 class Footer extends React.Component {
-  state = {
-    hideFooter: 'oskar',
-  }
-  componentDidMount() {
-    if (window.location.href.indexOf('/blog') > -1) {
-      console.log('/blog fanns i länken')
-    } else {
-      console.log('/blog fanns inte')
-    }
-  }
   render() {
     return (
       <footer className="footer">
