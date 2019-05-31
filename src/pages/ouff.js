@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import ogImage from '../images/metaImg-ouff.jpg'
 import appStore from '../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
-import googlePlayIcon from '../images/googlePlayIcon.png'
+// import googlePlayIcon from '../images/googlePlayIcon.png'
 import ouffHero1 from '../images/ouff-hero-1.png'
 import ouffHero2 from '../images/ouff-hero-2.png'
 import ouffHero3 from '../images/ouff-hero-3.png'

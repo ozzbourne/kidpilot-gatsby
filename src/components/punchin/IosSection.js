@@ -102,6 +102,7 @@ const IosSection = props => (
           <div className="col-12 col-lg-8 offset-lg-2">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               className="img-link"
               href="https://appstore.com/punchintimetracker"
             >
@@ -112,7 +113,11 @@ const IosSection = props => (
           </div>
         </div>
         <div className="row">
-          <a target="_blank" href="https://appstore.com/punchintimetracker">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://appstore.com/punchintimetracker"
+          >
             <img className="store-link" src={appStore} alt=" " />
           </a>
         </div>
