@@ -31,6 +31,7 @@ module.exports = {
       options: {
         trackingId: 'UA-46067561-1',
         head: true,
+        exclude: ['gatsby.fatbrothers.se', 'gatsby.fatbrothers.se/**'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
