@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import ogImage from '../images/metaImg-ouff.jpg'
 import appStore from '../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'
-// import googlePlayIcon from '../images/googlePlayIcon.png'
+import googlePlayIcon from '../images/googlePlayIcon.png'
 import ouffHero1 from '../images/ouff-hero-1.png'
 import ouffHero2 from '../images/ouff-hero-2.png'
 import ouffHero3 from '../images/ouff-hero-3.png'
@@ -94,18 +94,18 @@ class SomethingPage extends React.Component {
                           alt="App Store"
                         />
                       </a>
-                      {/* <a
+                      <a
                         className="googlePlay"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/ouff"
+                        href="https://play.google.com/store/apps/details?id=com.kidpilot.ouff"
                       >
                         <img
                           className="store-link"
                           src={googlePlayIcon}
                           alt="Google Play"
                         />
-                      </a> */}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -143,18 +143,18 @@ class SomethingPage extends React.Component {
                 >
                   <img className="store-link" src={appStore} alt="App Store" />
                 </a>
-                {/* <a
+                <a
                   className="googlePlay"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="/ouff"
+                  href="https://play.google.com/store/apps/details?id=com.kidpilot.ouff"
                 >
                   <img
                     className="store-link"
                     src={googlePlayIcon}
                     alt="Google Play"
                   />
-                </a> */}
+                </a>
               </div>
               <div className="row">
                 <div className="col-12 release-notes release-notes-ouff">
