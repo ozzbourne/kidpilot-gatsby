@@ -46,20 +46,24 @@ class Header extends React.Component {
 
     $('.hamburger').toggleClass('open')
     if ($('.hamburger').hasClass('open')) {
-      $('.navigation').toggleClass('open')
+      $('.navigation').addClass('open')
 
       setTimeout(function() {
-        $('.navigation').toggleClass('transition')
+        $('.navigation').addClass('transition')
       }, 100)
 
-      $('body').toggleClass('open')
-      $('html').toggleClass('open')
+      $('body').addClass('open')
+      $('html').addClass('open')
       $('html, body').animate({ scrollTop: position }, 0)
     } else {
       position = $(window).scrollTop()
-      $('.navigation').toggleClass('transition')
-      $('body').toggleClass('open')
-      $('html').toggleClass('open')
+      $('.navigation').removeClass('transition')
+      setTimeout(function() {
+        $('.navigation').removeClass('open')
+      }, 500)
+
+      $('body').removeClass('open')
+      $('html').removeClass('open')
       $('html, body').animate(
         {
           scrollTop: position,
@@ -68,10 +72,20 @@ class Header extends React.Component {
       )
 
       //Wierd solution for solving fadeOut on mobile menu when closing it.
-      setTimeout(function() {
+      /*setTimeout(function() {
         $('.navigation').toggleClass('open')
-      }, 1800)
+      }, 1800)*/
     }
+  }
+
+  closeHamburger = () => {
+    setTimeout(function() {
+      $('.hamburger').removeClass('open')
+      $('.navigation').removeClass('transition')
+      $('.navigation').removeClass('open')
+      $('body').removeClass('open')
+      $('html').removeClass('open')
+    }, 500)
   }
 
   render() {
@@ -104,7 +118,11 @@ class Header extends React.Component {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/punchin/mac">
+                  <Link
+                    className="dropdown-item"
+                    to="/punchin/mac"
+                    onClick={this.closeHamburger}
+                  >
                     <img
                       className="menu-icon"
                       src={punchinMacIcon}
@@ -129,7 +147,11 @@ class Header extends React.Component {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/something">
+                  <Link
+                    className="dropdown-item"
+                    to="/something"
+                    onClick={this.closeHamburger}
+                  >
                     <img
                       className="menu-icon"
                       src={somethingIcon}
@@ -139,7 +161,11 @@ class Header extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/punchin/ios">
+                  <Link
+                    className="dropdown-item"
+                    to="/punchin/ios"
+                    onClick={this.closeHamburger}
+                  >
                     <img
                       className="menu-icon"
                       src={punchiniOSIcon}
@@ -149,7 +175,11 @@ class Header extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/ouff">
+                  <Link
+                    className="dropdown-item"
+                    to="/ouff"
+                    onClick={this.closeHamburger}
+                  >
                     <img
                       className="menu-icon"
                       src={ouffIcon}
@@ -161,10 +191,14 @@ class Header extends React.Component {
               </ul>
             </li>
             <li className="nav-item">
-              <Link to="/company">Company</Link>
+              <Link to="/company" onClick={this.closeHamburger}>
+                Company
+              </Link>
             </li>
             <li className="nav-item">
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog" onClick={this.closeHamburger}>
+                Blog
+              </Link>
             </li>
             {/* <li className="nav-item">
               <a href="https://blog.wearekidpilot.com">Blog</a>
