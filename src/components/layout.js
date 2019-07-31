@@ -5,10 +5,13 @@ import React from 'react'
 import Footer from './footer'
 import './styles/style.scss'
 import Transition from './transition'
+import Header from '../components/header'
 
 const Layout = ({ children, location }) => (
   <>
+    <Header />
     <Transition location={location}>{children}</Transition>
+    <Footer />
   </>
 )
 

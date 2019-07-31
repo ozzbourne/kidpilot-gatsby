@@ -6,7 +6,7 @@ html {
         color: $black;
         background: $kidpilot-blue;
         height: 850px;
-        padding-top: 120px;
+        padding-top: 190px;
         @media #{$small-and-down} {
           height: calc(100px + 100vw);
           padding-top: 70px;

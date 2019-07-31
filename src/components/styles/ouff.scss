@@ -7,8 +7,12 @@ html {
         height: auto;
         background-color: $white;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        padding-top: 70px;
         @media #{$large-and-down} {
           height: auto;
+        }
+        @media #{$medium-and-down} {
+          padding-top: 40px;
         }
         h1 {
           color: $dark-gray-text;

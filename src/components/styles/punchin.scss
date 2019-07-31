@@ -7,17 +7,24 @@ html {
         //z-index: 2;
         height: 900px;
         background: $light-orange;
+        padding-top: 95px;
+        @media #{$large-and-up} {
+          padding-top: 95px;
+        }
+        @media #{$xlarge-and-down} {
+          height: 950px;
+        }
         @media #{$large-and-down} {
-          height: 800px;
+          height: 870px;
         }
         @media #{$medium-and-down} {
-          height: 700px;
+          height: 770px;
         }
         @media #{$small-and-down} {
-          height: calc(500px + 100vw);
+          height: calc(570px + 100vw);
         }
         @media #{$xsmall-and-down} {
-          height: calc(450px + 100vw);
+          height: calc(520px + 100vw);
         }
         h2 {
           &.hidden {

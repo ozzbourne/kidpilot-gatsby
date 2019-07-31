@@ -39,7 +39,6 @@ class BlogPage extends React.Component {
           <html lang="en" />
         </Helmet>
         <div className="blogPage">
-          <Header />
           <iframe
             height="100%"
             width="100%"

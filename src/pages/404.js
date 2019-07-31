@@ -22,63 +22,59 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <>
-        <Layout location={this.props.location}>
-          <Helmet
-            title={'Kidpilot - We make apps you love to use'}
-            meta={[
-              {
-                name: 'description',
-                content:
-                  'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.',
-              },
-              {
-                property: 'og:title',
-                content: 'Kidpilot - We make apps you love to use',
-              },
-              { property: 'og:url', content: 'https://wearekidpilot.com/' },
-              {
-                property: 'og:description',
-                content:
-                  'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.',
-              },
-              {
-                property: 'og:image',
-                content: `https://wearekidpilot.com${ogImage}`,
-              },
-              { property: 'og:image:width', content: `1200` },
-              { property: 'og:image:height', content: `628` },
-            ]}
-          >
-            <html lang="en" />
-          </Helmet>
-          <div className="notFoundPage">
-            <Header />
-            <div className="section jumbotron-custom">
-              <div className="hero-bottom">
-                <div className="hero-wrapper">
-                  <div className="text-wrapper container">
-                    <h1 className="hidden">404</h1>
-                    <h5 className="hidden">
-                      Sorry, we can´t find what you are looking for.
-                    </h5>
-                    <h5 className="hidden">
-                      <div className="row">
-                        <Link to="/">
-                          <p className="button">Return Home</p>
-                        </Link>
-                      </div>
-                    </h5>
-                  </div>
+        <Helmet
+          title={'Kidpilot - We make apps you love to use'}
+          meta={[
+            {
+              name: 'description',
+              content:
+                'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.',
+            },
+            {
+              property: 'og:title',
+              content: 'Kidpilot - We make apps you love to use',
+            },
+            { property: 'og:url', content: 'https://wearekidpilot.com/' },
+            {
+              property: 'og:description',
+              content:
+                'We create tools for mac, web and mobile that help you focus on what you do best and generally make your life easier.',
+            },
+            {
+              property: 'og:image',
+              content: `https://wearekidpilot.com${ogImage}`,
+            },
+            { property: 'og:image:width', content: `1200` },
+            { property: 'og:image:height', content: `628` },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <div className="notFoundPage">
+          <div className="section jumbotron-custom">
+            <div className="hero-bottom">
+              <div className="hero-wrapper">
+                <div className="text-wrapper container">
+                  <h1 className="hidden">404</h1>
+                  <h5 className="hidden">
+                    Sorry, we can´t find what you are looking for.
+                  </h5>
+                  <h5 className="hidden">
+                    <div className="row">
+                      <Link to="/">
+                        <p className="button">Return Home</p>
+                      </Link>
+                    </div>
+                  </h5>
                 </div>
-                <div className="cta">
-                  <div className="moon" />
-                  <div className="stars" />
-                </div>
+              </div>
+              <div className="cta">
+                <div className="moon" />
+                <div className="stars" />
               </div>
             </div>
           </div>
-        </Layout>
-        <Footer />
+        </div>
       </>
     )
   }

@@ -5,19 +5,19 @@ html {
       text-align: left;
       .custom-container {
         padding: {
-          top: 80px;
+          top: 150px;
           bottom: 60px;
         }
         max-width: 50%;
         margin: 0 auto;
-        @media #{$small-and-down} {
+        @media #{$medium-and-down} {
           max-width: 92%;
         }
       }
       .heading {
         margin-top: 35px;
       }
-      .bold{
+      .bold {
         font-family: $bold;
       }
       a {
