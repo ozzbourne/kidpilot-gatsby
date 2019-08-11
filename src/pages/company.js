@@ -6,9 +6,6 @@ import ogImage from '../images/metaImg-index.jpg'
 import companyHero from '../images/plane-hero.png'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import CustomForm from '../components/CustomForm'
-import Header from '../components/header'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
 
 const url =
   'https://wearekidpilot.us13.list-manage.com/subscribe/post?u=ab1cde36fdda5421103c641ed&amp;id=9dbf30c533'

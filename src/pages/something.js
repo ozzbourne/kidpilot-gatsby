@@ -13,10 +13,6 @@ import folderImage from '../images/folder2x.png'
 import somethingUI from '../images/platforms-something.png'
 import somethingIcon from '../images/something-icon.png'
 
-import Header from '../components/header'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
-
 class SomethingPage extends React.Component {
   componentDidMount() {
     setTimeout(function() {

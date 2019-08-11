@@ -2,10 +2,6 @@ import React from 'react'
 import $ from 'jquery'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
-
 import IosSection from '../components/punchin/IosSection'
 import MacSection from '../components/punchin/MacSection.js'
 import ToggleButton from '../components/punchin/ToggleButton.js'

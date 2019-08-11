@@ -2,6 +2,7 @@ const allApps = {
   punchInIos: {
     title: 'Punch In',
     image: 'punchin-ios-icon.png',
+    logoName: 'punchInIosIcon',
     subtitleSpanText: 'Free',
     subtitle: ' for iPhone, iPad and iPod touch',
     description:
@@ -11,6 +12,7 @@ const allApps = {
   punchInMac: {
     title: 'Punch In',
     image: 'punchin-mac-icon.png',
+    logoName: 'punchInMacIcon',
     subtitle: 'For Mac',
     description:
       'Make time tracking less time consuming. Combine projects with clients, archive or delete projects, add/remove time, set hourly rate and more. Less really is more.',
@@ -19,6 +21,7 @@ const allApps = {
   ouff: {
     title: 'Ouff',
     image: 'ouff-icon.png',
+    logoName: 'ouffIcon',
     subtitleSpanText: 'Free',
     subtitle: ' for phone and tablet',
     description:
@@ -28,6 +31,7 @@ const allApps = {
   something: {
     title: 'Something',
     image: 'something-icon.png',
+    logoName: 'somethingIcon',
     subtitleSpanText: 'Free',
     subtitle: ' for iPhone, iPad and iPod touch',
     description:

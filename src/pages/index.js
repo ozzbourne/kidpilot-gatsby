@@ -4,14 +4,9 @@ import $ from 'jquery'
 import ogImage from '../images/metaImg-index.jpg'
 import ouffHeroImg from '../images/ouff-hero-index.png'
 import tjingScorecard from '../images/tjing-scorecard.png'
-import Header from '../components/header'
 import Helmet from 'react-helmet'
 import allAppsFromFile from '../allApps'
 import SingleApp from '../components/SingleApp'
-
-//If different layouts is used, replace "Layout" below and wrap page content with it
-import Layout from '../components/layout'
-import Footer from '../components/footer'
 
 class IndexPage extends React.Component {
   state = {

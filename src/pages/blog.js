@@ -1,6 +1,5 @@
 import React from 'react'
 import LayoutBlogPage from '../components/layoutBlogPage'
-import Header from '../components/header'
 import Helmet from 'react-helmet'
 
 class BlogPage extends React.Component {

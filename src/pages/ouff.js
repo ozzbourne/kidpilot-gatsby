@@ -10,10 +10,6 @@ import ouffHero2 from '../images/ouff-hero-2.png'
 import ouffHero3 from '../images/ouff-hero-3.png'
 import ouffIcon from '../images/ouff-icon.png'
 
-import Header from '../components/header'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
-
 class OuffPage extends React.Component {
   state = {
     heroImg: ouffHero1,

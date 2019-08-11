@@ -1,9 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
-import Header from '../../components/header'
-import Layout from '../../components/layout'
-import Footer from '../../components/footer'
 import ogImage from '../../images/metaImg-punchin.jpg'
 
 class PunchInPage extends React.Component {
