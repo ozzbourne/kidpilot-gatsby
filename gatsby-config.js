@@ -14,6 +14,8 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-netlify`,
+    'gatsby-plugin-netlify-cache',
     {
       resolve: `gatsby-plugin-layout`,
       options: {
