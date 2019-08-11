@@ -1,4 +1,4 @@
-import { simd, cache } from 'sharp'
+const sharp = require('sharp')
 
-simd(false)
-cache(false)
+sharp.simd(false)
+sharp.cache(false)
