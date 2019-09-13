@@ -115,6 +115,29 @@ class OuffPage extends React.Component {
               </div>
             </div>
           </div>
+          <div className="section customers">
+            <div className="container">
+              <h3>What our customers have to say</h3>
+              <section>
+                <h5 class="customer_heading">Daily roast 5/5</h5>
+                <h5>
+                  “Who would have guessed that an insult each day would make you
+                  feel happy? I didn't, but it sure does! Ouff is your personal
+                  roast app. Love it!”
+                </h5>
+                <p>– Uppercutter</p>
+              </section>
+              <section>
+                <h5 class="customer_heading">Great! 5/5</h5>
+                <h5>
+                  “Just when you think the sky’s the limit and everything’s
+                  going great this wonderful coaching app will slap you to
+                  senses and get you back to normal!”
+                </h5>
+                <p>– lrsbll</p>
+              </section>
+            </div>
+          </div>
           <div className="section apps">
             <div className="container app">
               <div className="row">
