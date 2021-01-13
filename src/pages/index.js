@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
                     <h5>
                       The new standard in Disc Golf scoring. Find and play
                       events, keep scores and track your performance with highly
-                      detailed stats and more. Getting better is up to you, but
+                      detailed stats and more. Gettting better is up to you, but
                       we think we can help.
                     </h5>
                     <a href="https://spinndiscgolf.com">
