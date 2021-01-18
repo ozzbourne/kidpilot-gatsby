@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import GatsbyImage from './queryAppImagesFromData'
 import punchInIosIcon from '../images/punchin-ios-icon.png'
 import punchInMacIcon from '../images/punchin-mac-icon.png'
 import ouffIcon from '../images/ouff-icon.png'
@@ -25,7 +24,6 @@ class SingleApp extends React.Component {
       <div className="app col-12 col-md-6">
         <div className="gatsbyImage-linkWrapper">
           <Link className="img-link" to={linkToPage}>
-            {/* <GatsbyImage imgName={image} /> */}
             {logoName === 'punchInIosIcon' && (
               <img src={punchInIosIcon} alt={`${title} logo`} />
             )}
